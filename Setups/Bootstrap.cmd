@@ -1,7 +1,8 @@
 REM I wrote this because the LODS VM image is soooooo out of date. It adds a few modern bits. I found trying to install Edge Chromium using Chocolatey was 
 REM problematic. Giving Goolge Chrome a go.
 
-
+REM add powershell menu to explorer
+reg import "Add PowerShell to Context Menu.reg"
 
 REM Install Chocolatey
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
