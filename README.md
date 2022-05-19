@@ -9,9 +9,9 @@
 
 
 ### Do this every time you start a new lab environment
-1. run **cmd.exe**
-2. Type **cd \\** while in the command prompt
-3. run the command **git clone https://github.com/Mark-AIICT/CAD-2.git**
-4. Navigate to **c:\CAD-2\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
+1. run <span style="color:blue">**cmd.exe**</span>
+2. Type <span style="color:blue">**cd \\** while in the command prompt
+3. run the command <span style="color:blue">**git clone https://github.com/Mark-AIICT/CAD-2.git**
+4. Navigate to <span style="color:blue">**c:\CAD-2\setups**</span>, then right-mouse click <span style="color:blue">**bootstrap.cmd**</span> and **run as administrator**
 5. Change your display settings to a better resolution
 6. Change your default browser to google chrome
