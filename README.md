@@ -1,5 +1,5 @@
 # MSSA - Programming using C#
-# Instructor: Mark Walsh (AIICT)
+## Instructor: Mark Walsh (AIICT)
 
 
 ![](Images/AIICT.png)
