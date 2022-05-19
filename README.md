@@ -1,8 +1,12 @@
-# Coming soon.....
+# MSSA - Programming using C#
+# Instructor: Mark Walsh (AIICT)
 
 
 ![](Images/AIICT.png)
 ![](Images/Microsoft.png)
+## Key Information
+....to be added
+
 
 ### Do this every time you start a new lab environment
 1. run **cmd.exe**
