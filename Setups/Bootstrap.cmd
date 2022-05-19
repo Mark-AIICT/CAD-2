@@ -21,6 +21,7 @@ git config --global core.autocrlf false
 
 choco install dotnet-6.0-sdk -y
 choco install dotnetfx -Y
+choco install netfx-4.7.2 -Y
 
 
 choco install notepadplusplus -y
