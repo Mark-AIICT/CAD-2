@@ -33,6 +33,7 @@ REM @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -I
 
 REM Remove out-of-date content, add most recent content
 rmdir c:\20483-Programming-in-C-Sharp-master /S /Q
+rmdir c:\Instructions /S /Q
 del c:\Users\Admin\Downloads\20483-Programming-in-C-Sharp-Master.zip
 git clone https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp C:\Users\Admin\Desktop\LabFiles
 
