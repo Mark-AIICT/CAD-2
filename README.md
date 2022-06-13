@@ -4,13 +4,12 @@
 
 ![](Images/AIICT.png)
 ![](Images/Microsoft.png)
-## Key Information
-....to be added
+## What is this?
+This page is a central table of contents that has references to all the associated content for the 20483 (C#) course.
 
-
-### Do this every time you start a new lab environment
-1. run **cmd.exe**
-2. Run the command **git clone https://github.com/Mark-AIICT/CAD-2.git C:\Users\Admin\Desktop\MarksFiles**
-3. Navigate to **C:\Users\Admin\Desktop\MarksFiles\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
-4. Change your display settings to a better resolution
-5. Change your default browser to google chrome
+## Key Links
+1. [Study Spot](https://www.studyspot.com.au/course/view.php?id=396) - You'll find here your course notes and other important materials.
+2. [Information regarding the labs for this course](Documents/Labs.md).
+3. [Whiteboard diragrams](#) - This is a link to whiteboard digrams I'll draw thoughout the course.
+4. [QNA](#) - The purpose of this page is to record questions raised for which nobody had an answer yet.
+5. Code for my additional demos you'll find in this repository under the folder [MarksCode](MarksCode/reaadme.md).
