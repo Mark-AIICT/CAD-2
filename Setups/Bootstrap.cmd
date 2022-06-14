@@ -38,4 +38,6 @@ rmdir c:\Temp /S /Q
 del c:\Users\Admin\Downloads\20483-Programming-in-C-Sharp-Master.zip
 git clone https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp C:\Users\Admin\Desktop\LabFiles
 
+"restarting the lab computer to install changes"
+cmd /C shutdown -r -f -T 3
 
