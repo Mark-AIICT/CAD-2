@@ -8,9 +8,9 @@ I've written a few notes here for you to help  when it comes to doing the labs. 
 4. To run Visual Studio on the lab virtual machines you will need to sign in to Visual Studio. You can either sign-in with an existing Microsoft account or create a new one for the course by visiting https://www.outlook.com.
 5. Don't follow the lab instructions in the course notes, those are out-of-date. Be sure to follow the instructions in the lab environment.
 6. If you're not doing anything in the lab for a while, for example you've gone outside to catch a spider, press the **save** button to snap-freeze the lab so you can pick up where you left off later.
-7. **Every time** you launch a new lab environment I'd like you to run a script I've written to install additional software. The lab environments were created several years ago and it would be good to bring a few things up-to-date. The instructions for running the script are below:
+7. **Every time** you launch the **module 01** lab environment I'd like you to run a script I've written to install additional software. We'll use the **module 01** lab environment when going through te chapters and doing any ad-hoc demos or exercises. The lab environments were created several years ago and it would be good to bring a few things up-to-date. The instructions for running the script are below:
  
-## Do this every time you start a new lab environment (takes about 15 minutes)
+## Do this every time you start the module 01 lab environment (takes about 15 minutes)
 1. run **cmd.exe** from the Windows  Start button.
 2. Run the command **git clone https://github.com/Mark-AIICT/CAD-2.git C:\Users\Admin\Desktop\MarksFiles**
 3. Navigate to **C:\Users\Admin\Desktop\MarksFiles\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
@@ -18,4 +18,4 @@ I've written a few notes here for you to help  when it comes to doing the labs. 
 5. After it restarts, login and run **cmd.exe** as administrator. Type the following command and press enter **git credential-manager-core configure**
 
 6. Change your default browser to google chrome by typing **default app settings** from the windows start button. (I would have liked to install the latest version of the Microsoft Edge browser but it isn't compatible the the version of Windows in the lab).
-7. [Clone your git repo to the lab virtual machine](usingGitHubToSaveYourWork.md)
+7. [Clone your git repo to the module 01 lab virtual machine](usingGitHubToSaveYourWork.md)
