@@ -1,7 +1,7 @@
 REM I wrote this because the LODS VM image is soooooo out of date. It adds a few modern bits. 
 cd C:\Users\Admin\Desktop\MarksFiles\Setups
 
-C:\Users\Admin\Desktop\OSPPREARM.EXE.lnk
+cmd /C "C:\Program Files\Microsoft Office\Office16\OSPPREARM.EXE"
 
 REM add powershell menu to explorer
 reg import "Add PowerShell to Context Menu.reg"
