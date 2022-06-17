@@ -1,5 +1,7 @@
-REM I wrote this because the LODS VM image is soooooo out of date. It adds a few modern bits. I found trying to install Edge Chromium using Chocolatey was 
-REM problematic. Giving Goolge Chrome a go.
+REM I wrote this because the LODS VM image is soooooo out of date. It adds a few modern bits. 
+cd C:\Users\Admin\Desktop\MarksFiles\Setups
+
+cmd /C "C:\Program Files\Microsoft Office\Office16\OSPPREARM.EXE"
 
 REM add powershell menu to explorer
 reg import "Add PowerShell to Context Menu.reg"
@@ -26,6 +28,7 @@ choco install netfx-4.7.2 -Y
 
 choco install notepadplusplus -y
 
+REM I found trying to install Edge Chromium using Chocolatey was problematic. Giving Google Chrome a go.
 REM Download Edge Chromium (the versions can be found at https://edgeupdates.microsoft.com/api/products?view=enterprise...I used postman to get the JSON
 REM @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "$response = Invoke-WebRequest -Uri 'REM https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/71c25d04-9596-4481-90c5-a1070a31c64b/MicrosoftEdgeEnterpriseX64.msi -outfile .\\MicrosoftEdgeEnterpriseX64.msi' -Method Get"
 
