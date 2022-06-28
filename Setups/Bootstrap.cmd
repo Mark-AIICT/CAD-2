@@ -13,7 +13,7 @@ REM Install Chocolatey
 reg import "C:\Users\Admin\Desktop\MarksFiles\Setups\Add PowerShell to Context Menu.reg"
 
 choco install git.install /WindowsTerminal -y
-choco install googlechrome -y
+choco install googlechrome -y --ignore-checksums
 
 
 
