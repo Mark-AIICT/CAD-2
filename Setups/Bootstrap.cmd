@@ -43,6 +43,6 @@ del c:\Users\Admin\Downloads\20483-Programming-in-C-Sharp-Master.zip
 git clone https://github.com/Mark-AIICT/MS20483.git C:\Users\Admin\Desktop\LabFiles
 
 echo "The lab computer needs to restart to install changes"
-pause
-cmd /C shutdown -r -f -T 2
+
+cmd /C shutdown -r -f -T 10
 
