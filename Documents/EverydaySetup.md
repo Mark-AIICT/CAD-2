@@ -1,5 +1,5 @@
 
-# Do this every day **BEFORE** the class starts (takes about 15 minutes)
+# Do this every day **BEFORE** the class starts (takes about 15 minutes)  (http://ddls.to/everyday)
 1. Launch Lab01.
 2. Login to Lab01.
 3. While in the Lab01 environment,
