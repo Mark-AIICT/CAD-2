@@ -1,0 +1,1 @@
+If you need to make many changes to a string variable then use the StringBuilder class. This application demonstrates the performance difference between a String and StringBuilder.

@@ -1,0 +1,1 @@
+The TryParse function included in many datatypes is a great way to validate user input for  correct data type.

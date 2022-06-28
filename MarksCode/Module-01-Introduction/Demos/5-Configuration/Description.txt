@@ -1,0 +1,1 @@
+This example includes code that reads a configuration file to determine the width of a pen to be used for drawing on a bitmap.

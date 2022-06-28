@@ -1,0 +1,1 @@
+A simple example of a foreach loop that loops through an array. In this case the array is created by using the GetFiles function method of a Directory class.
