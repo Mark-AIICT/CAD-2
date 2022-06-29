@@ -1,0 +1,1 @@
+An example show a couple of methods that the "int" structure supports
