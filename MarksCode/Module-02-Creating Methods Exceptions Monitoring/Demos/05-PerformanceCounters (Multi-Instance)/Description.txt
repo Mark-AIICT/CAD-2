@@ -1,0 +1,1 @@
+A multiple instance performance counter can be instatiated a number of times. This application creates a performance category group as well as a couple of performance counters. 

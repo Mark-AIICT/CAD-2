@@ -1,0 +1,1 @@
+In this example the 'checked' function is used to force an exception to be raised when overflow occurs.

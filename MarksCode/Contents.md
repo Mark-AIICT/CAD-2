@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:29/06/2022 6:22:54 PM)  -- Mark Walsh, AIICT 
+        <br />(Updated:30/06/2022 9:39:46 AM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -32,10 +32,22 @@
         <b>Description</b>
       </td>
     </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00-SimpleForEach</td><td bgcolor="#D7FFFF" class="style2">This is a simple example showing how a Foreach loop is better to write than a For loop in certain circumstances</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1-StringVsStringBuilder</td><td bgcolor="#EBEBEB" class="style2">If you need to make many changes to a string variable then use the StringBuilder class. This application demonstrates the performance difference between a String and StringBuilder.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-RegularExpression</td><td bgcolor="#D7FFFF" class="style2">Using a regular expressiion to validate the format of an email address</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-ForEach</td><td bgcolor="#EBEBEB" class="style2">A simple example of a foreach loop that loops through an array. In this case the array is created by using the GetFiles function method of a Directory class.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-TryParse</td><td bgcolor="#D7FFFF" class="style2">The TryParse function included in many datatypes is a great way to validate user input for  correct data type.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">5-Configuration</td><td bgcolor="#EBEBEB" class="style2">This example includes code that reads a configuration file to determine the width of a pen to be used for drawing on a bitmap.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">6-Recursion</td><td bgcolor="#D7FFFF" class="style2">You need to be able to recognise recursive code. While you might not often see it you need to be able to understand it.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">7-DataTypes</td><td bgcolor="#EBEBEB" class="style2">This example shows a few C# (.net framework) datatypes. It includes allocating variables that are Structures and variables based on classes</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">8-TypeMembers</td><td bgcolor="#D7FFFF" class="style2">This example shows a few C# (.net framework) datatypes. It includes allocating variables that are Structures and variables based on classes</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">9-Conversion</td><td bgcolor="#EBEBEB" class="style2">Implicit conversion (see line 18) and explicit conversion (see lines 20-22)</td></tr></table>
+  <h2>Module-02-Creating Methods Exceptions Monitoring ...... 
+    </h2>
+  <table>
+    <tr>
+      <td class="style3" />
+      <td>
+        <b>Title</b>
+      </td>
+      <td class="style2">
+        <b>Description</b>
+      </td>
+    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">01-Out-Parameter-WPF</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">02-Out-Parameter</td><td bgcolor="#EBEBEB" class="style2">In this example I've written my own function that includes the out specifier for one of the parameters.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">02a-Overflow and Checked</td><td bgcolor="#D7FFFF" class="style2">In this example the 'checked' function is used to force an exception to be raised when overflow occurs.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">03-ExceptionHandling</td><td bgcolor="#EBEBEB" class="style2">This is a WPF application that exhibits a few ideas that you might like to use including, central error handling and creating a 'help ticket' for IT support staff.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">04-Logging-WPF</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">04-Tracing-WPF</td><td bgcolor="#EBEBEB" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">05-PerformanceCounters (Multi-Instance)</td><td bgcolor="#D7FFFF" class="style2">A multiple instance performance counter can be instatiated a number of times. This application creates a performance category group as well as a couple of performance counters. </td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">06-PerformanceCounters (Single-Instance)</td><td bgcolor="#EBEBEB" class="style2">A single instance performance counter is effectively shared across several applications. This application creates a performance category group as well as a couple of performance counters. </td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">07-TraceSourceDemo</td><td bgcolor="#D7FFFF" class="style2">Application showing the use of the TraceSource object. This object was introduced in .Net 2.0 and is a better choice than the TraceSwitch object.</td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  29/06/2022 6:22:54 PM</span>
+          Mark Walsh (AIICT)  30/06/2022 9:39:46 AM</span>
 </div>

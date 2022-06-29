@@ -1,0 +1,1 @@
+In this example I've written my own function that includes the out specifier for one of the parameters.

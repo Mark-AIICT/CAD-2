@@ -1,0 +1,1 @@
+A single instance performance counter is effectively shared across several applications. This application creates a performance category group as well as a couple of performance counters. 
