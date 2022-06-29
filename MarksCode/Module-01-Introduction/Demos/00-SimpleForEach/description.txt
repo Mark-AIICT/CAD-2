@@ -1,0 +1,1 @@
+This is a simple example showing how a Foreach loop is better to write than a For loop in certain circumstances
