@@ -1,0 +1,1 @@
+This example shows a few C# (.net framework) datatypes. It includes allocating variables that are Structures and variables based on classes
