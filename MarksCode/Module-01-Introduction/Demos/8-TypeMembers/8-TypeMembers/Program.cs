@@ -32,7 +32,7 @@ namespace _8_TypeMembers
 
 
             Console.ReadLine();
-
+            
         }
     }
 }
