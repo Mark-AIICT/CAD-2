@@ -37,7 +37,7 @@ namespace ConsoleApplication5
             {
                 fileCount++;
                 fileNames.Add(item);
-            }
+            }       
 
 
             return fileCount;
