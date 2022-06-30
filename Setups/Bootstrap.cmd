@@ -15,6 +15,8 @@ reg import "C:\Users\Admin\Desktop\MarksFiles\Setups\Add PowerShell to Context M
 choco install git.install /WindowsTerminal -y
 choco install googlechrome -y --ignore-checksums
 
+REM instal octotree
+reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist /v 1 /t REG_SZ /d bkhaagjahfmjljalopjnoealnfndnagc /f
 
 
 git config --global user.name "Student@DDLS"
