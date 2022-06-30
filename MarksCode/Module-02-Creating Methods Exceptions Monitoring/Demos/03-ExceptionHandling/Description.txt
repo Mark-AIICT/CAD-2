@@ -1,1 +1,0 @@
-This is a WPF application that exhibits a few ideas that you might like to use including, central error handling and creating a 'help ticket' for IT support staff.
