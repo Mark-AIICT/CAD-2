@@ -1,0 +1,1 @@
+This is an example of an application that writes 'Log' entries using a special mechanism that is part of the .net framework called 'trace listeners'. using this mechanism system operators can change the application configuration to increase or decrease the detail of the log entries. Additionally, they can log to other locations without having to change the application code.

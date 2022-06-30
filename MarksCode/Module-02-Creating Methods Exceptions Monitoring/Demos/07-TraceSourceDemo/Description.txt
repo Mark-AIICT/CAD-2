@@ -1,1 +1,1 @@
-Application showing the use of the TraceSource object. This object was introduced in .Net 2.0 and is a better choice than the TraceSwitch object.
+Application showing the use of the TraceSource object. This object was introduced in .Net 2.0 and is a better choice than the TraceSwitch object you saw in an earlier demo.

@@ -1,0 +1,1 @@
+This is an example of an application that writes 'Log' entried two different ways. The first way is to write to the windows event log an the other way is to write to the file system.

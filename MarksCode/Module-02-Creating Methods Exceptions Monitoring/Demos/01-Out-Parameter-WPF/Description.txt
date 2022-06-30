@@ -1,0 +1,1 @@
+An OUT parameter is similar to a return value from a method but it's defined in the parameters section. You don't pass a value when calling the method, instead you look at the value after the method has run. In this example I'm calling the TryParse method which returns true or false, the OUT parameter will have a value after the TryParse has been called.
