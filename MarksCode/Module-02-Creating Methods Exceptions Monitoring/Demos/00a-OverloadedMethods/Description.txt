@@ -1,0 +1,1 @@
+When two methods have the same name but a different nunber of paramaters and/or different parameter types they are said to be overloaded . Can you work out why we have this concept? 

@@ -1,0 +1,1 @@
+Sometimes you want to throw exceptions in your code because you have a situation where an application shouldn’t continue. In this case an invoice is being raised with a negative amount; that’s not allowed. 
