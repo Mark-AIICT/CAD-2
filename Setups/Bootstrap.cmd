@@ -1,6 +1,10 @@
 REM I wrote this because the LODS VM image is soooooo out of date. It adds a few modern bits. 
 cd C:\Users\Admin\Desktop\MarksFiles\Setups
 
+REM Create Scheduled Task to register Git cred manager on re-boot
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./GitCredManager.ps1"
+
+REM Rearm MS Office
 cmd /C "C:\Program Files\Microsoft Office\Office16\OSPPREARM.EXE"
 
 REM add powershell menu to explorer
