@@ -18,7 +18,7 @@
 4. Adds shortcut to the desktop so you can easily Refresh Mark's Code to be the latest version.
 5. Installs Chocolatey.
 6. Installs the latest version of Git and Git GUI.
-7. Installs Google Chrome.
+7. Installs Google Chrome. Why Chrome not Edge? The most recent version of Edge doesn't install on the lab environment becuase the version of Windows 10 is old.
 8. Sets Google Chrome to be the default browser.
 9. Adds the 'Octotree' extension to Google chrome which is very useful when you are browsing GitHub.
 10. Installs .net framework 4.7.2
