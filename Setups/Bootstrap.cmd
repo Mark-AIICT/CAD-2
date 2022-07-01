@@ -29,6 +29,7 @@ git config --global user.name "Student@DDLS"
 git config --global user.email "Student@DDLS"
 git config --global core.autocrlf false
 
+choco install ditto -y
 choco install dotnet-6.0-sdk -y
 choco install dotnetfx -Y
 choco install netfx-4.7.2 -Y
