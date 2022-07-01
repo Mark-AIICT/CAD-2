@@ -56,6 +56,10 @@ mkdir c:\Temp
 del c:\Users\Admin\Downloads\20483-Programming-in-C-Sharp-Master.zip
 git clone https://github.com/Mark-AIICT/MS20483.git C:\Users\Admin\Desktop\LabFiles
 
+REM Remove MS Edge from the TaskBar
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./TaskBar.Ps1"
+
+
 echo "The lab computer needs to restart to install changes"
 
 cmd /C shutdown -r -f -T 10
