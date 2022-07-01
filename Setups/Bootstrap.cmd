@@ -10,6 +10,11 @@ cmd /C "C:\Program Files\Microsoft Office\Office16\OSPPREARM.EXE"
 REM add powershell menu to explorer
 reg import "Add PowerShell to Context Menu.reg"
 
+REM Copy desktop links
+cmd /C copy "C:\Users\Admin\Desktop\MarksFiles\Setups\MarksCode - Shortcut.lnk" "C:\Users\Admin\Desktop"
+cmd /C copy "C:\Users\Admin\Desktop\MarksFiles\Setups\Refresh Marks Code.lnk" "C:\Users\Admin\Desktop"
+
+
 REM Install Chocolatey
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
@@ -29,7 +34,7 @@ git config --global user.name "Student@DDLS"
 git config --global user.email "Student@DDLS"
 git config --global core.autocrlf false
 
-choco install ditto -y
+
 choco install dotnet-6.0-sdk -y
 choco install dotnetfx -Y
 choco install netfx-4.7.2 -Y
