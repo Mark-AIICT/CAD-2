@@ -6,8 +6,8 @@
    1. run **cmd.exe** from the Windows  Start button.
    2. Run the command **git clone --depth 1 https://github.com/Mark-AIICT/CAD-2.git C:\Users\Admin\Desktop\MarksFiles**
    3. Navigate to **C:\Users\Admin\Desktop\MarksFiles\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
-   4. After running the above you'll see that it reboots the Virtual Machine. That's necessary.
-   5. After it restarts, Sign in to Visual Studio on the Lab Environment.
+   4. While it's running, Sign in to Visual Studio on the Lab Environment. You can use any Microsoft account.
+   5. When the script end it reboots the Virtual Machine. That's necessary.
    6. Save the lab. (the save link is at the top right of the screen in the dropdown menu)
 
 # What does this do?
