@@ -8,5 +8,23 @@
    3. Navigate to **C:\Users\Admin\Desktop\MarksFiles\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
    4. After running the above you'll see that it reboots the Virtual Machine. That's necessary.
    5. After it restarts, Sign in to Visual Studio on the Lab Environment.
-   8.  Skip this for now: [Clone your git repo to the module 01 lab virtual machine](usingGitHubToSaveYourWork.md)
-   9.  Save the lab.
+   6. Save the lab. (the save link is at the top right of the screen in the dropdown menu)
+
+# What does this do?
+1. Installs Git Credential manager to support MFA.
+2. Extends the license on Microsoft Office.
+3. Adds "OpenWithPowerShell" as a conetxt menu in file explorer.
+4. Adds shortcut to the desktop so you can easily access Mark's Code.
+4. Adds shortcut to the desktop so you can easily Refresh Mark's Code to be the latest version.
+5. Installs Chocolatey.
+6. Installs the latest version of Git and Git GUI.
+7. Installs Google Chrome.
+8. Sets Google Chrome to be the default browser.
+9. Adds the 'Octotree' extension to Google chrome which is very useful when you are browsing GitHub.
+10. Installs .net framework 4.7.2
+10. Installs .net framework 4.8
+11. Installs .net framework 6.0
+12. Installs Notepad++
+13. Removes out-of-date Lab files and lab instructions.
+14. Adds the latest version of Lab files to the desktop.
+15. Reboots.
