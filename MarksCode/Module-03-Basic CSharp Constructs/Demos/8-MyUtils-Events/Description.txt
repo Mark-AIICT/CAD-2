@@ -1,0 +1,1 @@
+This is the example we looked at in class. It takes the delegates example and changes it to use events. This results in a better experience for the programmer calling functions in the MyUtils Application.

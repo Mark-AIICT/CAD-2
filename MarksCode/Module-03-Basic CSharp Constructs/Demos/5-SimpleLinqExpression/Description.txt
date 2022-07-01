@@ -1,0 +1,1 @@
+This example is a WPF Application that uses a Linq Expression to query over an array. In the case of this program the array represents the names of files in a folder. The Linq query finds all the files that have a user-specified string in their name.

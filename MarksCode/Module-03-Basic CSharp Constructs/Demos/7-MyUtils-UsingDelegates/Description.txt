@@ -1,0 +1,1 @@
+This is the example we looked at in class. Remember that the MyUtils functionality was created first. The delegate defines the signature of a callback function that programmers using the MyUtils application may choose to implement if they would like feedback.

@@ -1,0 +1,1 @@
+A simple example of using a struct in this case to hold the details of a bank account. The example shows the use of private data and properties.

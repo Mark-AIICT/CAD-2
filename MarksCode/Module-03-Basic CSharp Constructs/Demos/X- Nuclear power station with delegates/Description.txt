@@ -1,0 +1,1 @@
+The nuclear power station example is an example of using delegates and events. There are 4 demos in this section. See the powerpoint slides in this folder for a conceptual overview. This example describes how we'd do things WITH delegates. 

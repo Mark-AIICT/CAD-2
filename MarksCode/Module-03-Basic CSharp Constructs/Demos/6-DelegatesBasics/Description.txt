@@ -1,0 +1,1 @@
+This example shows the most basic idea of a delegate. It's a data type that can point to a function. In the case of this example the delegate can point to any function that accepts a single 'int' parameter and returns an 'int'.

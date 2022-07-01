@@ -1,0 +1,1 @@
+Example of 'bitarray' class that allows retrieval of an bit using an integer.

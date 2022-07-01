@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18- What is an Indexer", "P18- What is an Indexer.csproj", "{0351E93E-4878-479F-9A0B-88F13D36B9BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0351E93E-4878-479F-9A0B-88F13D36B9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0351E93E-4878-479F-9A0B-88F13D36B9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0351E93E-4878-479F-9A0B-88F13D36B9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0351E93E-4878-479F-9A0B-88F13D36B9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

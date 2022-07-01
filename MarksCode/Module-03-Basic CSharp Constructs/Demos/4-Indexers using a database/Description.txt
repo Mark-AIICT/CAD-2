@@ -1,0 +1,1 @@
+This example works with a database (Customer Database). This app uses integer based and string based subscripts to retireve customers from a database.
