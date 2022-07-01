@@ -1,1 +1,0 @@
-This uses delegates to call a function on a background thread (using beginInvoke) and to implement a callback function. The example calls a function in a class to list all the files in a folder. It's the same as the earlier example but uses events for the callback rather than simply using delegates.

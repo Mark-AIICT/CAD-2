@@ -1,1 +1,0 @@
-This is a simple little example that uses the delegate's Combine() method to implement a 'Multicast' kind of thing.

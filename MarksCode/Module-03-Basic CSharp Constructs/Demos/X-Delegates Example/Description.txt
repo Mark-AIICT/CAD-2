@@ -1,1 +1,0 @@
-The purpose of this example is to explain the use of delegates and events. Premise: I was asked as a developer to create a small utility application that counted the number of files given a folder path. In order that I can provide feedback to the caller, I've defined an event.  

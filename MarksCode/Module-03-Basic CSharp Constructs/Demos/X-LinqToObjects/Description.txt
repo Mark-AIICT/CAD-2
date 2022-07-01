@@ -1,1 +1,0 @@
-This app uses a Linq Expression to find all the files that contain 'px' in their name. Remember, Linq statements can be run against object that implements either IQuerable<T> or IEnumerable<T>.
