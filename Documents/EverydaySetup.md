@@ -7,9 +7,6 @@
    2. Run the command **git clone --depth 1 https://github.com/Mark-AIICT/CAD-2.git C:\Users\Admin\Desktop\MarksFiles**
    3. Navigate to **C:\Users\Admin\Desktop\MarksFiles\setups**, then right-mouse click **bootstrap.cmd** and **run as administrator**
    4. After running the above you'll see that it reboots the Virtual Machine. That's necessary.
-   5. After it restarts, login and run **cmd.exe** as administrator. Type the following command and press enter **git credential-manager-core configure**
-
-   6. Change your default browser to google chrome by typing **default app settings** from the windows start button. (I would have liked to install the latest version of the Microsoft Edge browser but it isn't compatible the the version of Windows in the lab).
-   7. Sign in to Visual Studio on the Lab Environment.
-   8.  [Clone your git repo to the module 01 lab virtual machine](usingGitHubToSaveYourWork.md)
+   5. After it restarts, Sign in to Visual Studio on the Lab Environment.
+   8.  Skip this for now: [Clone your git repo to the module 01 lab virtual machine](usingGitHubToSaveYourWork.md)
    9.  Save the lab.
