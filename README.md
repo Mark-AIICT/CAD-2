@@ -13,4 +13,4 @@ This page is a central table of contents that has references to all the associat
 3. [Do this every day **BEFORE** the class starts.](Documents/EverydaySetup.md)
 4. [Whiteboard diragrams](https://mwddls.sharepoint.com/:w:/s/LP/ESoz2u9SboVGtipVrOeCocYBfBPHSzkCCWQgXaLDf6tcSg?e=OcBPrf) - This is a link to whiteboard digrams I'll draw thoughout the course.
 5. [QNA](https://mwddls.sharepoint.com/:w:/s/LP/Efygw1txaDNJlKTTwJU1yfABjT93OPlTu9oOL2zrxyjxiQ?e=CqW2Zp) - The purpose of this page is to record questions raised for which nobody had an answer yet.
-6. Code for my additional demos you'll find in this repository under the folder [MarksCode](MarksCode/)
+6. **Code for my additional demos** you'll find in this repository under the folder [MarksCode](MarksCode/). Tip: Click on **Contents.md** to see the index and descriptions.
