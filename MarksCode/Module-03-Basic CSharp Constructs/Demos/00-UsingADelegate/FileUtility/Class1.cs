@@ -9,6 +9,11 @@ namespace FileUtility
 {
     public class Util
     {
+        public delegate void FeedbackMessage(string message);
+
+        public FeedbackMessage pointerToFeedback;
+
+
         /// <summary>
         /// Accepts a file path and returns the total bytes found for all files 
         /// </summary>
@@ -19,7 +24,8 @@ namespace FileUtility
             long totalBytesFound = 0;
             foreach (var file in Directory.GetFiles(path))
             {
-
+                if (pointerToFeedback != null)
+                    pointerToFeedback($"Processing file: {file}");
                 totalBytesFound += file.Length;
                 System.Threading.Thread.Sleep(20);
             }

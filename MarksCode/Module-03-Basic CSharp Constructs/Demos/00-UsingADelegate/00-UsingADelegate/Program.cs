@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks;               
 
 namespace _00_UsingADelegate
 {
@@ -11,6 +11,7 @@ namespace _00_UsingADelegate
         static void Main(string[] args)
         {
             FileUtility.Util util = new FileUtility.Util();
+            util.pointerToFeedback = ProcessFeedback;
 
             long result = util.ProcessFiles(@"c:\windows\system32");
 
@@ -18,5 +19,11 @@ namespace _00_UsingADelegate
 
             Console.ReadLine();
         }
+
+        static void ProcessFeedback(string msg)
+        {
+            Console.WriteLine(msg);
+        }
     }
 }
+                                                    
