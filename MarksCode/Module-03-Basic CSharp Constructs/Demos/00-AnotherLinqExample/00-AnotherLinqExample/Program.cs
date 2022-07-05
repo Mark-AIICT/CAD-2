@@ -11,7 +11,11 @@ namespace _00_AnotherLinqExample
     {
         static void Main(string[] args)
         {
+
+
             string[] theFiles = Directory.GetFiles(@"C:\windows\system32");
+
+
             var xfiles = from f in theFiles
                          where f.Contains("xy")
                          select f;
@@ -20,6 +24,9 @@ namespace _00_AnotherLinqExample
             {
                 Console.WriteLine(file);
             }
+
+            Console.WriteLine($"The last file name length is {theFiles.Last().Length}");
+
 
             Console.ReadLine();
 
