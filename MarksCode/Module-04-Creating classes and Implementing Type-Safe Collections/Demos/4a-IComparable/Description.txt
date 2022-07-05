@@ -1,0 +1,1 @@
+If a class implements the interface IComparable then it can be used with the Sort method. In this example a town implements this interface to determine for a sort which town comes before another. This example does not use Generics

@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. No further description yet. I included this example to show how a delegate and event was used in practice. When the person at Microsoft defined the Button class they created it so it could call my method.

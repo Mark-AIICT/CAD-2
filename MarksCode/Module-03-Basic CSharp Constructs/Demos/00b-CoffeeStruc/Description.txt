@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. A simple example of a struct that has constructors, fields and properties.

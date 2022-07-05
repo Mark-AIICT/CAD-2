@@ -1,0 +1,1 @@
+Similar to the IComparable interface IComparer is used in conjunction with a Sort method. In this example a cutom written class implements this interface to determine a sort order. This class could be used with 'Town' objects or any objects that derive from 'Town'. This example does not use generics.

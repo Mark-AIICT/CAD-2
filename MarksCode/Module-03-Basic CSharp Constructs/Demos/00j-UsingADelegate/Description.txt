@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class.  The reason for implementing a delegate in this example is so the console application can get feedback while the ProcessFiles method is executing. 

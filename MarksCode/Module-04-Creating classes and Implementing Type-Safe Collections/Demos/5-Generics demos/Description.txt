@@ -1,0 +1,1 @@
+Various demos to explain the concept of generics. Generics were introduced in C# 2.0. The demos match the additional slides. To run the demo open the file program.cs and uncomment/comment each of the calls to a demo function.

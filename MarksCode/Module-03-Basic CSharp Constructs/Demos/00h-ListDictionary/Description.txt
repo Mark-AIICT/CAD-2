@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. This is a simple example of using a datatype defined as part of the .Net Framework.

@@ -1,0 +1,1 @@
+A very simple example of defining an interface first and then classes later.

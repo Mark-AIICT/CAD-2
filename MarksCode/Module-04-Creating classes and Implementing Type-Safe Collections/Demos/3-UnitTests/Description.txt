@@ -1,0 +1,1 @@
+This example has a class library that includes a function for validating an email. I've added a unit test project and written a few example unit tests. To run it find the 'Test Explorer Window' by using the Visual Studio menus, then do a full rebuild; you should see the test cases ready to be run.

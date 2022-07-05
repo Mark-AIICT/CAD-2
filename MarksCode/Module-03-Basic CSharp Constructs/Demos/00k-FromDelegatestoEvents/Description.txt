@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. Events extend the idea of delegates and make things easier for the caller of a struct or class.

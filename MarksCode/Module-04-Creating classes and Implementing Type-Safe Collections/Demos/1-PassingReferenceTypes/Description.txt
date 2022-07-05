@@ -1,0 +1,1 @@
+Take care when you pass reference types byValue or byRef. A reference to an object is always passed to the called function so that means the called function has direct access to the object.

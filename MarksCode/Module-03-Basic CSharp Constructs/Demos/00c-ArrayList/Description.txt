@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. I'd be avoiding ArrayLists these days because each element in the ArrayList is of type Object. There's nothing intrinsically bad about that but it can lead to compile time and run time errors if you're not careful. These days use generic lists instead.

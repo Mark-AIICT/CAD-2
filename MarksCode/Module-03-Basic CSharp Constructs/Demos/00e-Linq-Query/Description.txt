@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. A Linq query is not SQL but looks like it. It's a C# statement that allows us to query collections using an SQL like construct. 

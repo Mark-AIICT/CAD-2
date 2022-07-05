@@ -1,0 +1,1 @@
+Static methods can be called without creating an instance of a class. This example has a simple example of static data and a static method

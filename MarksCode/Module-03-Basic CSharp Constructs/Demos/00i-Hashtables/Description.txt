@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. HashTables are in-memory Key-Value stores.

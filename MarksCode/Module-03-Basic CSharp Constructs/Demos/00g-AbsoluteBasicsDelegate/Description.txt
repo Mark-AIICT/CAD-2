@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class.  A delegate is a data type that can point to a method. Here you have the most simple example of a delegate.

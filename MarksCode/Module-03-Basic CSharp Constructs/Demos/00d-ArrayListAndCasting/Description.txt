@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. Every element in an ArrayList has the data type object. When you retrieve an item from an arraylist it is returned as an object. That means you need to Cast (Convert) it to the Data type of the receiving variable. 

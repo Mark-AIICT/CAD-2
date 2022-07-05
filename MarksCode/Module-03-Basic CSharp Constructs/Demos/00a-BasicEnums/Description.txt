@@ -1,1 +1,1 @@
-This example I typed out in class. No further description yet.
+This example I typed out in class. It's a very simple example of using enum. Using enum make code more readable and reduce the chances of errors.

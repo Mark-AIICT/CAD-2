@@ -1,0 +1,1 @@
+﻿This simple console application includes a class called CustomerCollection that Implements IEnumerable<T> and IEnumerator<T>
