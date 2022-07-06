@@ -11,7 +11,7 @@ namespace ConsoleApplication12
     {
         static void Main(string[] args)
         {
-            MyClass p = new MyClass();
+            Thing p = new Thing();
             p.MyProperty = 7;
             f1(p);
             Console.WriteLine($"The value of p.MyProperty is {p.MyProperty}");
@@ -19,13 +19,13 @@ namespace ConsoleApplication12
             Console.ReadLine();
         }
 
-        static void f1(MyClass x)
+        static void f1(Thing x)
         {
             x.MyProperty++;
         }
     }
 
-    struct MyClass
+    class Thing //try changing this to a struct and re-running it. Can you explain what is happening?
     {
         public int MyProperty { get; set; }
     }
