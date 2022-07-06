@@ -25,7 +25,7 @@ namespace ConsoleApplication12
         }
     }
 
-    class MyClass
+    struct MyClass
     {
         public int MyProperty { get; set; }
     }
