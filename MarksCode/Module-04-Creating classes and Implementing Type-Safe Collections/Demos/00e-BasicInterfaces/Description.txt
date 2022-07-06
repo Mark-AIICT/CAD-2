@@ -1,0 +1,1 @@
+Interfaces are contracts. They describe a set of functionality that a class guarantees to implement. In this example there is an interface that two bank account classes implement which includes a deposit and withdraw function.

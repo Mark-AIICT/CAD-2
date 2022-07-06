@@ -1,0 +1,1 @@
+A very simple Generic that swaps two values. Generics result in faster code, type-safe code.

@@ -1,0 +1,1 @@
+A Very simple example of a class. In this case a BankAccount. I've added comments about the access modifiers Public, Private, and Internal.

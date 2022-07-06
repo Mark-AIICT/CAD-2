@@ -1,0 +1,1 @@
+Constructors are special methods which are called when the new operator runs. They are typically used to initialise the content of an object as it's created.
