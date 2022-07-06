@@ -1,0 +1,1 @@
+The C# 'new' keyword can be used to replace a function in a base class. This would be the case whether it was marked as virtual (i.e. overridable) or not. The 'new'keyword has an impact on polymorphism as you'd see by running this application. 

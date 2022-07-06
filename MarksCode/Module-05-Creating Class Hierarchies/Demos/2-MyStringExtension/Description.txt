@@ -1,0 +1,1 @@
+In this example I've created an extension method for the String class. The method validates whether an email is OK.

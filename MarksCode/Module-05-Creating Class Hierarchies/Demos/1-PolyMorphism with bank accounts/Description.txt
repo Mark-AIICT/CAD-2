@@ -1,0 +1,1 @@
+Polymorphism exists when multiple classes exhibit the same interface and can be used interchangeably. In this example note that if we needed to add new bank accounts we would not need to change the code in the transfer function. It is closed for modification and open for extension.
