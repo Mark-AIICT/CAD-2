@@ -6,20 +6,23 @@ using System.Threading.Tasks;
 
 namespace Pets
 {
-    abstract class Pet
+    abstract class Pet //you must inherit from this
     {
         public enum LifeState { Alive, Dead };
         public string PetName { get; set; }
         public LifeState AliveOrDead { get; set; }
         public string Habitat { get; set; }
 
-        public Pet()
+        protected string _petID; //accessible to derived classes
+
+        public Pet() //constructor
         {
             Habitat = "something";
             PetName = "NoName";
+            _petID = Guid.NewGuid().ToString();
         }
 
-        public virtual string DescribePet()
+        public virtual string DescribePet() //derived classes can override this
         {
             string description =
                    $"\n\n{PetName} is {AliveOrDead}, " +
@@ -29,7 +32,7 @@ namespace Pets
             return description ;
         }
 
-        abstract public string Move();
+        abstract public string Move(); //derived classes must override this
        
     }
 
@@ -39,6 +42,7 @@ namespace Pets
         public override string DescribePet()
         {
             string description = base.DescribePet() +
+                                 $"ID is Fish-{_petID}, " +
                                  $"{PetName} likes the salinity to be {PreferredSalinity}. ";
             return description;
         }
@@ -47,6 +51,13 @@ namespace Pets
     sealed class Shark:Fish //sealed means you can't inherit from it
     {
         public string PreferredPrey { get; set; }
+        public override string DescribePet()
+        {
+            string description = base.DescribePet() +
+                                 $"{PetName} likes to eat {PreferredPrey}. ";
+            return description;
+        }
+
         public override string Move()
         {
             return "Swimming very fast";
@@ -54,7 +65,7 @@ namespace Pets
     }
 
 
-    class GoldFish : Fish
+    class GoldFish:Fish
     {
         public override string Move()
         {
@@ -65,7 +76,16 @@ namespace Pets
     abstract class Mammal : Pet
     {
         public int NumberOfLegs { get; set; }
+        public override string DescribePet()
+        {
+            string description = base.DescribePet() +
+                                 $"ID is Mammal-{_petID}," +
+                                 $"{PetName} has {NumberOfLegs} legs. ";
+            return description;
+        }
+
         abstract public string MakeSound(); //you must override this in a derived class
+
 
     }
 

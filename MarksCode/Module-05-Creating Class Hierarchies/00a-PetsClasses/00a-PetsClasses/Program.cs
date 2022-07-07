@@ -35,7 +35,15 @@ namespace _00a_PetsClasses
             fido.Habitat = "Garden";
             Console.WriteLine(fido.DescribePet());
 
-           //Console.WriteLine( DescribePet(toby) );   //An aternative
+            Wombat wally = new Wombat();
+            wally.PetName = "Wally";
+            wally.NumberOfLegs = 5;
+            wally.Habitat = "Bush";
+            Console.WriteLine(wally.DescribePet());
+
+            Console.WriteLine("\n\n\nUsing the alternative...");
+
+            Console.WriteLine( DescribePet(fido) );   //An aternative
 
 
 
