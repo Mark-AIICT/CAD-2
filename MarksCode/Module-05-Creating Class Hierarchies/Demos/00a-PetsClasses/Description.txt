@@ -1,0 +1,1 @@
+This example explores the key concepts of creating a class hierarchy. There are a series of classes that describe a range of Pets. There is a matching diagram in the 'whiteboard diagrams for the course'.

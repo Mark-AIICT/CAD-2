@@ -1,0 +1,1 @@
+If it's appropriate you might derive a class from a .Net Framework class. Why? because the .Net Framework class is almost what you want but not quite. By deriving your own class you can add the additional functionality that you want.

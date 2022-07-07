@@ -1,0 +1,1 @@
+This is an example of inheriting from a generic class. The main concept to note in this example that defining a custom class means that the coding for using that class is more simple and efficient than using the base class.
