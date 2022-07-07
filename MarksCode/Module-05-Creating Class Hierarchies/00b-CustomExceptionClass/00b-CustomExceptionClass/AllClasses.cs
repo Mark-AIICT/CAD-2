@@ -24,7 +24,7 @@ namespace _00b_CustomExceptionClass
 
     class BankAccountBalanceException : ApplicationException
     {
-        public decimal incorrectBalanceAmount { get; set; }
+        public decimal IncorrectBalanceAmount { get; set; }
         public BankAccountBalanceException() : base()
         { }
 
@@ -33,7 +33,7 @@ namespace _00b_CustomExceptionClass
 
         public BankAccountBalanceException(string msg, decimal incorrectBalance) : base(msg)
         {
-            incorrectBalanceAmount = incorrectBalance;
+            IncorrectBalanceAmount = incorrectBalance;
         }
 
         public BankAccountBalanceException(string msg, Exception ex) : base(msg,ex)
