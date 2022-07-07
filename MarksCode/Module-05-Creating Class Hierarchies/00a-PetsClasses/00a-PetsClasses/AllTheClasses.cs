@@ -17,8 +17,16 @@ namespace Pets
 
         public Pet() //constructor
         {
-            Habitat = "something";
-            PetName = "NoName";
+            Habitat = "NoHabitatDefinedYet";
+            PetName = "NoNameYet";
+            AliveOrDead = LifeState.Alive;
+            _petID = Guid.NewGuid().ToString();
+        }
+
+        public Pet(string petName, string habitat) //constructor
+        {
+            Habitat = habitat;
+            PetName = petName;
             _petID = Guid.NewGuid().ToString();
         }
 
@@ -38,6 +46,16 @@ namespace Pets
 
     abstract class Fish:Pet
     {
+        public Fish()
+        {
+            PreferredSalinity = "Neutral";
+            Habitat = "Water";
+        }
+
+        public Fish(string fishName, string habitat) : base(fishName, habitat)
+        {
+            PreferredSalinity = "Neutral";
+        }
         public string PreferredSalinity { get; set; }
         public override string DescribePet()
         {
@@ -67,6 +85,13 @@ namespace Pets
 
     class GoldFish:Fish
     {
+        public GoldFish()
+        { }
+
+        public GoldFish(string goldFishName) : base(goldFishName,"Pond")
+        {
+
+        }
         public override string Move()
         {
             return "Swimming Slowly, bobbing about";

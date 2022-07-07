@@ -21,10 +21,8 @@ namespace _00a_PetsClasses
             Console.WriteLine(toby.DescribePet());
 
 
-            GoldFish tsang = new GoldFish();
-            tsang.PetName = "Tsang";
+            GoldFish tsang = new GoldFish("Tsang");
             tsang.AliveOrDead = Pet.LifeState.Alive;
-            tsang.Habitat = "pond";
             tsang.PreferredSalinity = "No Salt";
             Console.WriteLine(tsang.DescribePet());
 
