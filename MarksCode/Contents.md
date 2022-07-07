@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:7/07/2022 2:36:23 PM)  -- Mark Walsh, AIICT 
+        <br />(Updated:7/07/2022 2:41:17 PM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -79,11 +79,11 @@
       <td class="style2">
         <b>Description</b>
       </td>
-    </tr>00a-PetsClasses<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00a-PetsClasses</td><td bgcolor="#D7FFFF" class="style2"></td></tr>00b-CustomExceptionClass<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00b-CustomExceptionClass</td><td bgcolor="#D7FFFF" class="style2"></td></tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">1-PolyMorphism with bank accounts</td><td bgcolor="#D7FFFF" class="style2">Polymorphism exists when multiple classes exhibit the same interface and can be used interchangeably. In this example note that if we needed to add new bank accounts we would not need to change the code in the transfer function. It is closed for modification and open for extension.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1a-BaseClassConstructors</td><td bgcolor="#EBEBEB" class="style2">This example shows constructors and calling base class constructors</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-MyStringExtension</td><td bgcolor="#D7FFFF" class="style2">In this example I've created an extension method for the String class. The method validates whether an email is OK.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-TheNEWkeyword</td><td bgcolor="#EBEBEB" class="style2">The C# 'new' keyword can be used to replace a function in a base class. This would be the case whether it was marked as virtual (i.e. overridable) or not. The 'new'keyword has an impact on polymorphism as you'd see by running this application. </td></tr></table>
+    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00a-PetsClasses</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">00b-CustomExceptionClass</td><td bgcolor="#EBEBEB" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">1-PolyMorphism with bank accounts</td><td bgcolor="#D7FFFF" class="style2">Polymorphism exists when multiple classes exhibit the same interface and can be used interchangeably. In this example note that if we needed to add new bank accounts we would not need to change the code in the transfer function. It is closed for modification and open for extension.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1a-BaseClassConstructors</td><td bgcolor="#EBEBEB" class="style2">This example shows constructors and calling base class constructors</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-MyStringExtension</td><td bgcolor="#D7FFFF" class="style2">In this example I've created an extension method for the String class. The method validates whether an email is OK.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-TheNEWkeyword</td><td bgcolor="#EBEBEB" class="style2">The C# 'new' keyword can be used to replace a function in a base class. This would be the case whether it was marked as virtual (i.e. overridable) or not. The 'new'keyword has an impact on polymorphism as you'd see by running this application. </td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  7/07/2022 2:36:23 PM</span>
+          Mark Walsh (AIICT)  7/07/2022 2:41:17 PM</span>
 </div>
