@@ -32,11 +32,11 @@ namespace ConsoleApplication15
         public int CompareTo(Object other)
         {
             if (PostCode == ((Town)other).PostCode)
-                return 0;
+                return 0; //they are the same
             else if (PostCode > ((Town)other).PostCode)
-                return -1;
+                return -1; //the postcde of the current object is larger than the object being compared with
             else
-                return 1;
+                return 1; //the postcde of the current object is samller than the object being compared with
         }
     }
 }
