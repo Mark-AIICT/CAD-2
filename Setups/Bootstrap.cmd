@@ -41,6 +41,8 @@ choco install netfx-4.7.2 -Y
 
 
 choco install notepadplusplus -y
+choco install fiddler -y
+choco install postman -y
 
 REM I found trying to install Edge Chromium using Chocolatey was problematic. Giving Google Chrome a go.
 REM Download Edge Chromium (the versions can be found at https://edgeupdates.microsoft.com/api/products?view=enterprise...I used postman to get the JSON
