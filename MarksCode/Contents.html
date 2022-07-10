@@ -56,7 +56,7 @@
                     Additional Materials for 20483</strong>
           </span>
           <span style="font-family: Tahoma; font-size: 10pt;">
-            <br />(Updated:7/6/2022 10:18:22 PM)  -- Mark Walsh, AIICT 
+            <br />(Updated:11/07/2022 8:45:32 AM)  -- Mark Walsh, AIICT 
                 </span>
         </td>
         <td style="width: 10px">
@@ -619,12 +619,76 @@
           <td bgcolor="#D7FFFF" class="style2">The C# 'new' keyword can be used to replace a function in a base class. This would be the case whether it was marked as virtual (i.e. overridable) or not. The 'new'keyword has an impact on polymorphism as you'd see by running this application. </td>
         </tr>
       </table>
+      <h2>Module-06-Reading and Writing Local Data ...... 
+      <a href="Module-06-Reading and Writing Local Data/">Open Folder</a></h2>
+      <table>
+        <tr>
+          <td class="style3" />
+          <td>
+            <b>Title</b>
+          </td>
+          <td class="style2">
+            <b>Description</b>
+          </td>
+        </tr>
+        <a href="Module-06-Reading and Writing Local Data/Demos/">Demos<br /></a>
+        <br />
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-06-Reading and Writing Local Data/Demos/1-Streams/">1-Streams</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">StreamReader and StreamWriter classes are used to copy data from one file to another.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-06-Reading and Writing Local Data/Demos/2-NetContractSerializer/">2-NetContractSerializer</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">I've thrown this example to show that the course notes are incorrect in the section where serialization choices are discussed. If you followed the notes you would be led to believe that XML serialization is inferior to binary serialization because private data are not serialized. In this example I'm using a class called the NetContractSerializer which clearly serializes private data.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-06-Reading and Writing Local Data/Demos/3-BinarySerializer/">3-BinarySerializer</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">Binary serializer without the ISerializable interface.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-06-Reading and Writing Local Data/Demos/4-XMLSerializer/">4-XMLSerializer</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-06-Reading and Writing Local Data/Demos/5-JSONSerializer/">5-JSONSerializer</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">An example that uses the DataContractJsonSerializer. Does not use the ISerialize interface.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-06-Reading and Writing Local Data/Demos/6-Using-ISerializable/">6-Using-ISerializable</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">In this example I've used the ISerializable interface to control exactly how an object is serialized.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-06-Reading and Writing Local Data/Demos/7-Custom-IFormatter/">7-Custom-IFormatter</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">With a class that implements IFormatter it's possible to control exactly how an object is serialized. The code is pretty close to that in the manual, I've just made a small change so that it doesn't crash when deserializing GUIDs.</td>
+        </tr>
+      </table>
     </div>
     <br />
     <br />
     <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
       <span style="font-family: Verdana">
-              Mark Walsh (AIICT)  7/6/2022 10:18:22 PM</span>
+              Mark Walsh (AIICT)  11/07/2022 8:45:32 AM</span>
     </div>
   </body>
 </html>

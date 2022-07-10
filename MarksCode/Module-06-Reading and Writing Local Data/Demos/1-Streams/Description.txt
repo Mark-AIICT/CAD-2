@@ -1,0 +1,1 @@
+StreamReader and StreamWriter classes are used to copy data from one file to another.

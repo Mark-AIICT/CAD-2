@@ -1,0 +1,1 @@
+With a class that implements IFormatter it's possible to control exactly how an object is serialized. The code is pretty close to that in the manual, I've just made a small change so that it doesn't crash when deserializing GUIDs.

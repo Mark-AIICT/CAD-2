@@ -1,0 +1,1 @@
+In this example I've used the ISerializable interface to control exactly how an object is serialized.

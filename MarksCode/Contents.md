@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:7/6/2022 10:18:24 PM)  -- Mark Walsh, AIICT 
+        <br />(Updated:11/07/2022 8:45:34 AM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -80,10 +80,22 @@
         <b>Description</b>
       </td>
     </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00a-PetsClasses</td><td bgcolor="#D7FFFF" class="style2">This example explores the key concepts of creating a class hierarchy. There are a series of classes that describe a range of Pets. There is a matching diagram in the 'whiteboard diagrams for the course'.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">00b-CustomExceptionClass</td><td bgcolor="#EBEBEB" class="style2">If it's appropriate you might derive a class from a .Net Framework class. Why? because the .Net Framework class is almost what you want but not quite. By deriving your own class you can add the additional functionality that you want.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">00c-InheritFromGenericClass</td><td bgcolor="#D7FFFF" class="style2">This is an example of inheriting from a generic class. The main concept to note in this example that defining a custom class means that the coding for using that class is more simple and efficient than using the base class.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1-PolyMorphism with bank accounts</td><td bgcolor="#EBEBEB" class="style2">Polymorphism exists when multiple classes exhibit the same interface and can be used interchangeably. In this example note that if we needed to add new bank accounts we would not need to change the code in the transfer function. It is closed for modification and open for extension.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">1a-BaseClassConstructors</td><td bgcolor="#D7FFFF" class="style2">This example shows constructors and calling base class constructors</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">2-MyStringExtension</td><td bgcolor="#EBEBEB" class="style2">In this example I've created an extension method for the String class. The method validates whether an email is OK.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">3-TheNEWkeyword</td><td bgcolor="#D7FFFF" class="style2">The C# 'new' keyword can be used to replace a function in a base class. This would be the case whether it was marked as virtual (i.e. overridable) or not. The 'new'keyword has an impact on polymorphism as you'd see by running this application. </td></tr></table>
+  <h2>Module-06-Reading and Writing Local Data ...... 
+    </h2>
+  <table>
+    <tr>
+      <td class="style3" />
+      <td>
+        <b>Title</b>
+      </td>
+      <td class="style2">
+        <b>Description</b>
+      </td>
+    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">1-Streams</td><td bgcolor="#D7FFFF" class="style2">StreamReader and StreamWriter classes are used to copy data from one file to another.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">2-NetContractSerializer</td><td bgcolor="#EBEBEB" class="style2">I've thrown this example to show that the course notes are incorrect in the section where serialization choices are discussed. If you followed the notes you would be led to believe that XML serialization is inferior to binary serialization because private data are not serialized. In this example I'm using a class called the NetContractSerializer which clearly serializes private data.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">3-BinarySerializer</td><td bgcolor="#D7FFFF" class="style2">Binary serializer without the ISerializable interface.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">4-XMLSerializer</td><td bgcolor="#EBEBEB" class="style2">The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">5-JSONSerializer</td><td bgcolor="#D7FFFF" class="style2">An example that uses the DataContractJsonSerializer. Does not use the ISerialize interface.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">6-Using-ISerializable</td><td bgcolor="#EBEBEB" class="style2">In this example I've used the ISerializable interface to control exactly how an object is serialized.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">7-Custom-IFormatter</td><td bgcolor="#D7FFFF" class="style2">With a class that implements IFormatter it's possible to control exactly how an object is serialized. The code is pretty close to that in the manual, I've just made a small change so that it doesn't crash when deserializing GUIDs.</td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  7/6/2022 10:18:24 PM</span>
+          Mark Walsh (AIICT)  11/07/2022 8:45:34 AM</span>
 </div>
