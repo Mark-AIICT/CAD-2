@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:11/07/2022 5:07:27 PM)  -- Mark Walsh, AIICT 
+        <br />(Updated:11/07/2022 8:05:20 PM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -103,12 +103,12 @@
       <td class="style2">
         <b>Description</b>
       </td>
-    </tr>Additional Slides<br /><br />Demos<br /><br /><tr><td class="style3" /><td bgcolor="#EBEBEB">0-Simple linqToObjects</td><td bgcolor="#EBEBEB" class="style2">This example is a Windows Forms application that shows how to use both Extension methods and Linq query expressions to execute a query over an array.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-DatabaseFirst</td><td bgcolor="#D7FFFF" class="style2">In this example I've used Microsoft's AdventureWorks database and created an entity model from it.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-linqToObjectsGrouping</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform various types of grouping.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-CustomisingGeneratedClasses</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">5-linqToObjectsJoins</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform a join of two collections.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X-EG1-MapEntityToMultipleTables</td><td bgcolor="#D7FFFF" class="style2">Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
+    </tr>Additional Slides<br /><br />Demos<br /><br /><tr><td class="style3" /><td bgcolor="#EBEBEB">0-Simple linqToObjects</td><td bgcolor="#EBEBEB" class="style2">This example is a Windows Forms application that shows how to use both Extension methods and Linq query expressions to execute a query over an array.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-DatabaseFirst</td><td bgcolor="#D7FFFF" class="style2">In this example I've used Microsoft's AdventureWorks database and created an entity model from it.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-linqToObjectsGrouping</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform various types of grouping.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-CustomisingGeneratedClasses</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">5-linqToObjectsJoins</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform a join of two collections.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X-EF Code First example</td><td bgcolor="#D7FFFF" class="style2">EF Code first was introduced in EF 4.1. To build an EF Code first application use the NuGet Package manager to add the latest Entity Framework. The example I've written includes the use of Database.SetInitializer which was the way to update a database schema when the model changes in EF 4.1, basically it drops and re-creates the database. Since the release of EF 4.3 it's possible to perform 'database migrations'. To do this run 'Enable-Migrations' from the package manager console, change your classes (model), then run 'Add-Migration'. Lastly run 'Update-Database'. </td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X-EG1-MapEntityToMultipleTables</td><td bgcolor="#EBEBEB" class="style2">Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
 for some rows (it's assumed a person is an instructor if they have a non-null hire date).
 You can find similar instructions of how to create and application like this here: http://msdn.microsoft.com/en-us/library/cc716698.aspx
 
 
-</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X-EG2-MappingMultipleTablesToAnEntity</td><td bgcolor="#EBEBEB" class="style2">A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
+</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X-EG2-MappingMultipleTablesToAnEntity</td><td bgcolor="#D7FFFF" class="style2">A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
 in the adventureworks database. It also includes update functionality. This can be done because there 
 is a 1 to 1 relationship between the customer and store tables.
 
@@ -120,5 +120,5 @@ is a 1 to 1 relationship between the customer and store tables.
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  11/07/2022 5:07:27 PM</span>
+          Mark Walsh (AIICT)  11/07/2022 8:05:20 PM</span>
 </div>
