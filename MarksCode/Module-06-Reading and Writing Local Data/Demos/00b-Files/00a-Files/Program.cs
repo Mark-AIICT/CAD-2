@@ -22,10 +22,10 @@ namespace _00a_Files
             Console.WriteLine($"The file directory is {fi.Directory}");
             Console.WriteLine($"The file name is {fi.Name}");
 
-            //var  fs = fi.OpenWrite();
-            //.Write(data.ToArray<, 0, data.Length - 1);
+            var writer = fi.AppendText();
+            writer.Write(data);
+            writer.Close();
 
-            //Console.WriteLine($"your data was saved at {filePath}\n");
             Console.WriteLine("press any key to end");
             Console.ReadKey();
 
