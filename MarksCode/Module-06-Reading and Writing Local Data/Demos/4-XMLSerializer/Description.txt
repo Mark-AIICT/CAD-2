@@ -1,1 +1,1 @@
-The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example.
+The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example. Something to keep in mind with this serializer is that by default it does not serialize private data.
