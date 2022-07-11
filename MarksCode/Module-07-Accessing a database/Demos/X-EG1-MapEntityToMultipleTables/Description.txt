@@ -1,0 +1,5 @@
+Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
+for some rows (it's assumed a person is an instructor if they have a non-null hire date).
+You can find similar instructions of how to create and application like this here: http://msdn.microsoft.com/en-us/library/cc716698.aspx
+
+

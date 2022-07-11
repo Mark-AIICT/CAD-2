@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:7/10/2022 7:46:36 PM)  -- Mark Walsh, AIICT 
+        <br />(Updated:11/07/2022 3:07:50 PM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -91,11 +91,34 @@
       <td class="style2">
         <b>Description</b>
       </td>
-    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00a-Files</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">00b-Files</td><td bgcolor="#EBEBEB" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">00c-Directory</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1-Streams</td><td bgcolor="#EBEBEB" class="style2">StreamReader and StreamWriter classes are used to copy data from one file to another.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-NetContractSerializer</td><td bgcolor="#D7FFFF" class="style2">I've thrown this example to show that the course notes are incorrect in the section where serialization choices are discussed. If you followed the notes you would be led to believe that XML serialization is inferior to binary serialization because private data are not serialized. In this example I'm using a class called the NetContractSerializer which clearly serializes private data.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-BinarySerializer</td><td bgcolor="#EBEBEB" class="style2">Binary serializer without the ISerializable interface.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-XMLSerializer</td><td bgcolor="#D7FFFF" class="style2">The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">4a-SOAPSerializer</td><td bgcolor="#EBEBEB" class="style2">Binary serializer without the ISerializable interface.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">5-JSONSerializer</td><td bgcolor="#D7FFFF" class="style2">An example that uses the DataContractJsonSerializer. Does not use the ISerialize interface.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">6-Using-ISerializable</td><td bgcolor="#EBEBEB" class="style2">In this example I've used the ISerializable interface to control exactly how an object is serialized.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">7-Custom-IFormatter</td><td bgcolor="#D7FFFF" class="style2">With a class that implements IFormatter it's possible to control exactly how an object is serialized. The code is pretty close to that in the manual, I've just made a small change so that it doesn't crash when deserializing GUIDs.</td></tr></table>
+    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">00a-Files</td><td bgcolor="#D7FFFF" class="style2">A very simple console application that writes to a file.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">00b-Files</td><td bgcolor="#EBEBEB" class="style2">A very simple console application that uses a FileInfo class to work with a file.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">00c-Directory</td><td bgcolor="#D7FFFF" class="style2">A very simple console application that uses the System.IO.Directory class.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">1-Streams</td><td bgcolor="#EBEBEB" class="style2">StreamReader and StreamWriter classes are used to copy data from one file to another.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-NetContractSerializer</td><td bgcolor="#D7FFFF" class="style2">I've thrown this example to show that the course notes are incorrect in the section where serialization choices are discussed. If you followed the notes you would be led to believe that XML serialization is inferior to binary serialization because private data are not serialized. In this example I'm using a class called the NetContractSerializer which clearly serializes private data.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-BinarySerializer</td><td bgcolor="#EBEBEB" class="style2">Binary serializer without the ISerializable interface.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-XMLSerializer</td><td bgcolor="#D7FFFF" class="style2">The course notes suggest that you should use a SOAPFormatter to serialize an object to XML. That's fine if you want the XML format to be SOAP, but if you're just wanting plain old XML then you'd use the XMLSerializer as in this example. Something to keep in mind with this serializer is that by default it does not serialize private data.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">4a-SOAPSerializer</td><td bgcolor="#EBEBEB" class="style2">Binary serializer without the ISerializable interface.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">5-JSONSerializer</td><td bgcolor="#D7FFFF" class="style2">An example that uses the DataContractJsonSerializer. Does not use the ISerialize interface.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">6-Using-ISerializable</td><td bgcolor="#EBEBEB" class="style2">In this example I've used the ISerializable interface to control exactly how an object is serialized.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">7-Custom-IFormatter</td><td bgcolor="#D7FFFF" class="style2">With a class that implements IFormatter it's possible to control exactly how an object is serialized. The code is pretty close to that in the manual, I've just made a small change so that it doesn't crash when deserializing GUIDs.</td></tr></table>
+  <h2>Module-07-Accessing a database ...... 
+    </h2>
+  <table>
+    <tr>
+      <td class="style3" />
+      <td>
+        <b>Title</b>
+      </td>
+      <td class="style2">
+        <b>Description</b>
+      </td>
+    </tr>Additional Slides<br /><br />Demos<br /><br /><tr><td class="style3" /><td bgcolor="#EBEBEB">0-Simple linqToObjects</td><td bgcolor="#EBEBEB" class="style2">This example is a Windows Forms application that shows how to use both Extension methods and Linq query expressions to execute a query over an array.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">2-DatabaseFirst</td><td bgcolor="#D7FFFF" class="style2">In this example I've used Microsoft's AdventureWorks database and created an entity model from it.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">3-linqToObjectsGrouping</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform various types of grouping.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">4-CustomisingGeneratedClasses</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">5-linqToObjectsJoins</td><td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform a join of two collections.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X-EG1-MapEntityToMultipleTables</td><td bgcolor="#D7FFFF" class="style2">Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
+for some rows (it's assumed a person is an instructor if they have a non-null hire date).
+You can find similar instructions of how to create and application like this here: http://msdn.microsoft.com/en-us/library/cc716698.aspx
+
+
+</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X-EG2-MappingMultipleTablesToAnEntity</td><td bgcolor="#EBEBEB" class="style2">A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
+in the adventureworks database. It also includes update functionality. This can be done because there 
+is a 1 to 1 relationship between the customer and store tables.
+
+
+
+</td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  7/10/2022 7:46:36 PM</span>
+          Mark Walsh (AIICT)  11/07/2022 3:07:50 PM</span>
 </div>

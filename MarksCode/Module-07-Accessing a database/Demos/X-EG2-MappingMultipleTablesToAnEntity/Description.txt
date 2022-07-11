@@ -1,0 +1,6 @@
+A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
+in the adventureworks database. It also includes update functionality. This can be done because there 
+is a 1 to 1 relationship between the customer and store tables.
+
+
+
