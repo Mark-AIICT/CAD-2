@@ -1,0 +1,1 @@
+In this example I've used Microsoft's AdventureWorks database and created an entity model from it.
