@@ -30,8 +30,8 @@ namespace P19_Static_Methods
     class BankAccount
     {
 
-        public decimal Balance;
-        public static decimal InterestRate;
+        public decimal Balance { get; set; }
+        public static decimal InterestRate { get; set; }
 
         public decimal GetInterestAmount()
         {
