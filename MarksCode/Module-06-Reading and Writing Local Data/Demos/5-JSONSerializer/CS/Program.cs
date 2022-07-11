@@ -22,14 +22,14 @@ namespace CS
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
             //Serialize to XML
-            FileStream fs = new FileStream("SA.txt", FileMode.Create);
+            FileStream fs = new FileStream("c:\\temp\\data.json", FileMode.Create);
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(SavingsAccount));
             ser.WriteObject(fs,s);
             fs.Close();
 
 
             //DeSerialize from XML
-            FileStream fsIn = new FileStream("SA.txt", FileMode.Open);
+            FileStream fsIn = new FileStream("c:\\temp\\data.json", FileMode.Open);
             DataContractJsonSerializer serIn = new DataContractJsonSerializer(typeof(SavingsAccount));
 
             // Deserialize the data and read it from the instance.

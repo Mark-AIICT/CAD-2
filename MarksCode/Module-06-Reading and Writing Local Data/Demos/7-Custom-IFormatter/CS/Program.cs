@@ -23,14 +23,14 @@ namespace CS
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
             //Serialize to XML
-            FileStream fs = new FileStream("SA.ini", FileMode.Create);
+            FileStream fs = new FileStream("c:\\temp\\MyData.ini", FileMode.Create);
             IFormatter formatter = new IniFormatter();
             formatter.Serialize(fs, s);
             fs.Close();
 
 
             //DeSerialize from XML
-            FileStream fsIn = new FileStream("SA.ini", FileMode.Open);
+            FileStream fsIn = new FileStream("c:\\temp\\MyData.ini", FileMode.Open);
             SavingsAccount sx = (SavingsAccount)formatter.Deserialize(fsIn);
             fsIn.Close();
 

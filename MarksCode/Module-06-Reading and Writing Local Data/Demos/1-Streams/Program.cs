@@ -8,9 +8,9 @@ namespace P30_System.IO_Namespace
     {
         static void Main(string[] args)
         {
-            System.IO.StreamReader reader = new System.IO.StreamReader(@"C:\infile.txt");
+            System.IO.StreamReader reader = new System.IO.StreamReader(@"C:\temp\infile.txt");
             // Text in from file
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:\outfile.txt");
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:\temp\outfile.txt");
             // Text out to file
             string line;
             while ((line = reader.ReadLine()) != null)
