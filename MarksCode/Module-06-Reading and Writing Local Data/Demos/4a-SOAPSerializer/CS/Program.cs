@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Formatters.Soap;
 using System.Text;
 
 namespace CS
@@ -19,14 +20,14 @@ namespace CS
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
             //Serialize to XML
-            FileStream fs = new FileStream(@"c:\temp\SA.bin", FileMode.Create);
-            IFormatter formatter = new BinaryFormatter();
+            FileStream fs = new FileStream(@"c:\temp\SA.xml", FileMode.Create);
+            IFormatter formatter = new SoapFormatter();
             formatter.Serialize(fs, s);
             fs.Close();
 
 
             //DeSerialize from XML
-            FileStream fsIn = new FileStream(@"c:\temp\SA.bin", FileMode.Open);
+            FileStream fsIn = new FileStream(@"c:\temp\SA.xml", FileMode.Open);
             SavingsAccount sx = (SavingsAccount)formatter.Deserialize(fsIn);
             fsIn.Close();
 
