@@ -1,0 +1,1 @@
+The purpose of this example was to show adding a reference to a dll  in the .Net framework. In this case to System.Drawing.Dll
