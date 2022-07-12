@@ -30,4 +30,5 @@
 13. Removes out-of-date Lab files and lab instructions.
 14. Adds the latest version of Lab files to the desktop.
 15. Unpins Microsoft Edge from the task bar.
+15. Unzips the Adventureworks files (.mdf & .ldf) to the SQL Server Express data directory.
 15. Reboots.
