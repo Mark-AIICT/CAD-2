@@ -1,0 +1,1 @@
+This example shows binding an object to control properties. However, I've changed the properties of the object in memory so that they are dependency properties so that two way binding occurs. 

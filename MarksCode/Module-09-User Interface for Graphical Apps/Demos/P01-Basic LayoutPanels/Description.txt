@@ -1,0 +1,2 @@
+﻿This example is an alternative to the that on the Microsoft Course CD.
+It shows the 5 basic layout panels.

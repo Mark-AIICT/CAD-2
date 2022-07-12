@@ -1,0 +1,6 @@
+In this example I've defined 2 collections. One is a normal
+collection and one is derived from ObservableCollection.
+The example then binds the Obeservablecollection to a 
+list box and shows how to sort, group and use data templates. The
+example will work equally well if a normal collection 
+is used.

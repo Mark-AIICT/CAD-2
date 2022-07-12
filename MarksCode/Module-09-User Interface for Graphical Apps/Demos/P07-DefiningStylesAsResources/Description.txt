@@ -1,0 +1,1 @@
+An example of defining styles as recources and then using those resources in the XAML.

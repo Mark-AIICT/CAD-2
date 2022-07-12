@@ -1,0 +1,2 @@
+Application using global styles in WPF. Take a look at the 
+App.Xaml file to see how merged Resource files can work.

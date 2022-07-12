@@ -1,0 +1,54 @@
+﻿<Window x:Class="CollectionViewsSimple.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <Window.Resources>
+        <!-- The following line defines a source that is bound to a public property 
+             defined in the App.xaml.cs file. It currently binds to an observable
+             collection but will work equally well with a normal collection. -->
+        <CollectionViewSource  Source="{Binding Source={x:Static Application.Current}, Path=TownsObservable}" x:Key="listOfTowns"/>
+    </Window.Resources>
+    <Grid DataContext="{Binding Source={StaticResource listOfTowns}}">
+        <ListBox Margin="5,21,0,32" Name="listBox1" HorizontalAlignment="Left" Width="73"
+                 ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Path=PostCode}"/>
+                    </WrapPanel>
+
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+        <ListBox Name="CustomerListBox" Margin="86,21,0,33" 
+                 ItemsSource="{Binding Path=customers}"  IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Left" Width="110">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                        <WrapPanel>
+                            <TextBlock Text="{Binding Path=CustomerName}"/>
+                        </WrapPanel>
+
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+           
+            <ListBox.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" Foreground="Black" Background="LightGreen" Margin="0,5,0,0" Padding="3"/>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListBox.GroupStyle>
+
+        </ListBox>
+    </Grid>
+
+</Window>

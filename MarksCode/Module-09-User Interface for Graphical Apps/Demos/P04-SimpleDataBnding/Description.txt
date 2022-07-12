@@ -1,0 +1,1 @@
+This example shows binding an object to control properties.

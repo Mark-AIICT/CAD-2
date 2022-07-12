@@ -1,0 +1,1 @@
+Shows using System, Application and Local resources in WPF.

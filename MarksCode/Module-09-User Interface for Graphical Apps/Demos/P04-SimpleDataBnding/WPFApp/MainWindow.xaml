@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPFApp" x:Class="WPFApp.MainWindow"
+        Title="MainWindow" Height="489.474" Width="631.579" Loaded="Window_Loaded_1">
+    <Window.Resources>
+        <local:Coffee x:Key="coffee1" Name="Fourth Coffee Quencher"
+                                            Bean="Arabica"
+                                            CountryOfOrigin="Brazil" 
+                                            Strength="3" ></local:Coffee>
+    </Window.Resources>
+    <Grid>
+        <TextBlock Background="Yellow" Text="{Binding Source={StaticResource coffee1}, Path=Name}" Margin="0,0,0,299" />
+        <StackPanel Background="Gray" Margin="0,53,0,194">
+            <StackPanel.DataContext>
+                <Binding Source="{StaticResource coffee1}" />
+            </StackPanel.DataContext>
+            <TextBlock Text="{Binding Path=Name}" />
+            <TextBlock Text="{Binding Path=Bean}" />
+            <TextBlock Text="{Binding Path=CountryOfOrigin}" />
+            <TextBlock Text="{Binding Path=Strength}" />
+        </StackPanel>
+
+        <StackPanel Background="LightGreen" x:Name="SPH" Margin="0,148,0,99" Orientation="Horizontal">
+            
+            <TextBlock Text="{Binding Path=Name}" />
+            <TextBlock Text="|"/>
+            <TextBlock Text="{Binding Path=Bean}" />
+            <TextBlock Text="|"/>
+            <TextBlock Text="{Binding Path=CountryOfOrigin}" />
+            <TextBlock Text="|"/>
+            <TextBlock Text="{Binding Path=Strength}" />
+        </StackPanel>
+        
+        <TextBlock Background="Coral" x:Name="TB" Margin="0,246,0,32" />
+    </Grid>
+</Window>

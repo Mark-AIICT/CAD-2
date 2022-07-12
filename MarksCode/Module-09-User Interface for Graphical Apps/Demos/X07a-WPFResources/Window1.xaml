@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPFResources.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="603" Width="775">
+    <Grid Height="447" Width="767">
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}" x:Key="TitleText">
+                <Setter Property="FontStyle" Value="Italic"/>
+                <Setter Property="FontSize" Value="35px"/>
+            </Style>
+        </Grid.Resources>
+        
+        <TextBlock Style="{StaticResource TitleText}" Margin="20.006,30.009,0,114.32" HorizontalAlignment="Left" Width="588.748">This text is set using a local resource</TextBlock>
+        <TextBlock Style="{StaticResource AppTitleText}" Margin="20.006,115.749,74.308,164.335">This text is set using an Application resource</TextBlock>
+        
+        <TextBlock Name="StatTextBlock"
+            Background="{x:Static SystemColors.DesktopBrush}" 
+            Foreground="{x:Static SystemColors.ControlLightBrush}"
+            Margin="20.006,270,74.308,0" Height="51.444" 
+            VerticalAlignment="Top" FontSize="16">This text is set using an System resource (Static)</TextBlock>
+        
+        <TextBlock Name="DynTextBlock"
+            Margin="20.006,330,74.308,0" Height="51.444" 
+            Foreground="{x:Static SystemColors.ControlLightBrush}"
+            Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" 
+            VerticalAlignment="Top" TextWrapping="Wrap" FontSize="16" Text="This text is set using an System resource (Dynamic). If the system colors change while this application is running, the background will be updated automatically.">
+            
+        </TextBlock>
+        
+        
+        <Image MouseDown="image1_MouseDown" HorizontalAlignment="Right" Margin="0,30.009,47.157,0" Name="image1" Stretch="Fill" Width="45.728" Height="44.299" VerticalAlignment="Top" Source="/WPFResources;component/Q.jpg" />
+    </Grid>
+</Window>

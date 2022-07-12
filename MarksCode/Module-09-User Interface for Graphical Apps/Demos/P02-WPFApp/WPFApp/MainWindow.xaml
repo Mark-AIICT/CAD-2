@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPFApp" x:Class="WPFApp.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Border HorizontalAlignment="Left" Margin="112,34,0,0" VerticalAlignment="Top" BorderBrush="#FFD12929" BorderThickness="1">
+
+            <local:CoffeeSelector x:Name="CS" Height="258" Width="153" OrderPlaced="CoffeeSelector_OrderPlaced"/>
+
+        </Border>
+        <Label x:Name="lblResult" Content="Label" HorizontalAlignment="Left" Margin="329,127,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

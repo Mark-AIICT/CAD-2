@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:7/12/2022 12:18:40 AM)  -- Mark Walsh, AIICT 
+        <br />(Updated:7/12/2022 1:15:09 AM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -119,10 +119,39 @@ is a 1 to 1 relationship between the customer and store tables.
 
 
 </td></tr></table>
+  <h2>Module-09-User Interface for Graphical Apps ...... 
+    </h2>
+  <table>
+    <tr>
+      <td class="style3" />
+      <td>
+        <b>Title</b>
+      </td>
+      <td class="style2">
+        <b>Description</b>
+      </td>
+    </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF">P01-Basic LayoutPanels</td><td bgcolor="#D7FFFF" class="style2">This example is an alternative to the that on the Microsoft Course CD.
+It shows the 5 basic layout panels.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">P02-WPFApp</td><td bgcolor="#EBEBEB" class="style2">An example of a User Control. It's the same as the sample code in the course notes.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">P03-ElementToElementBinding</td><td bgcolor="#D7FFFF" class="style2">This example shows binding between elements. Specifically it uses 2-way binding.
+</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">P04-SimpleDataBnding</td><td bgcolor="#EBEBEB" class="style2">This example shows binding an object to control properties.
+</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">P05- BindingToACollection</td><td bgcolor="#D7FFFF" class="style2">An example of using DisplayMemberPath to bind a listbox to a collection of items.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">P06- BindingToACollectionUsingItemTemplates</td><td bgcolor="#EBEBEB" class="style2">An example of using a ListBox Item Template to bind a listbox to a collection of items.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">P07-DefiningStylesAsResources</td><td bgcolor="#D7FFFF" class="style2">An example of defining styles as recources and then using those resources in the XAML.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">P08-ControltemplateStyle</td><td bgcolor="#EBEBEB" class="style2">A very simple example of styling a button.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">P09-PropertyTriggers</td><td bgcolor="#D7FFFF" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">P10-DynamicTransformations</td><td bgcolor="#EBEBEB" class="style2"></td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X04b-TwoWayBinding</td><td bgcolor="#D7FFFF" class="style2">This example shows binding an object to control properties. However, I've changed the properties of the object in memory so that they are dependency properties so that two way binding occurs. 
+</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X05b-Binding to Collections</td><td bgcolor="#EBEBEB" class="style2">In this program an observable collection of products is created from a dataset and
+then bound to a listbox which displays model name. </td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X05c-CollectionViewsSimple</td><td bgcolor="#D7FFFF" class="style2">In this example I've defined 2 collections. One is a normal
+collection and one is derived from ObservableCollection.
+The example then binds the Obeservablecollection to a 
+list box and shows how to sort, group and use data templates. The
+example will work equally well if a normal collection 
+is used.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X06a-MasterDetail</td><td bgcolor="#EBEBEB" class="style2">In this example I've created an application that exhibits
+Master/detail functionality. To understand how it works look at the 
+town.cs file and then the ObservableTownsCollection.cs file, notice
+how a customersCollection is a property of a town. Then look at the
+Window1.Xaml file and notice the DataContext property on the grid as well 
+as the ItemsSource and IsSynchronizedWithCurrentItem properties of the 
+listboxes within the grid.</td></tr><tr><td class="style3" /><td bgcolor="#D7FFFF">X07a-WPFResources</td><td bgcolor="#D7FFFF" class="style2">Shows using System, Application and Local resources in WPF.</td></tr><tr><td class="style3" /><td bgcolor="#EBEBEB">X08a-MergedDictionaries</td><td bgcolor="#EBEBEB" class="style2">Application using global styles in WPF. Take a look at the 
+App.Xaml file to see how merged Resource files can work.</td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  7/12/2022 12:18:40 AM</span>
+          Mark Walsh (AIICT)  7/12/2022 1:15:09 AM</span>
 </div>

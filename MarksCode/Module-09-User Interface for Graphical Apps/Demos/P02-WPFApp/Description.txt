@@ -1,0 +1,1 @@
+﻿An example of a User Control. It's the same as the sample code in the course notes.
