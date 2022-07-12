@@ -1,0 +1,1 @@
+An exmple of using a ToList() to force the execution of the Linq query on the statement where it is declared.

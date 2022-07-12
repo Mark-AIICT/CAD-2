@@ -1,0 +1,1 @@
+Linq (Language Integrated Query) allows us to write C# statements that work with collections of objects. Linq queries can be written using extension methods or by using the SQL-like linq expressions.

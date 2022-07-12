@@ -1,0 +1,1 @@
+This example involved adding an entity model to an empty application, then adding 'entities' to the entity model. Once done i can then generate the DDL (Data definition Language) SQL to create the database tables that match my classes.

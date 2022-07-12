@@ -1,0 +1,1 @@
+This is not an example of accessing a database or using the entity framework. It shows how partial classes work where some of a class defintion is in one file and other parts of the definition are in different files. Partial classes are important when tools are used to generate part of a class definition and we'd like to add to that definition.
