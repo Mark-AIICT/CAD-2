@@ -61,6 +61,10 @@ git clone https://github.com/Mark-AIICT/MS20483.git C:\Users\Admin\Desktop\LabFi
 REM Remove MS Edge from the TaskBar
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./TaskBar.Ps1"
 
+REM Install Adventureworks
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./InstallAdventureworks.Ps1"
+
+
 
 echo "The lab computer needs to restart to install changes"
 
