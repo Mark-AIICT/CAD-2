@@ -1,0 +1,4 @@
+In this example I defined a conceptual model first and then generated a database from it. The conceptual model has inheritance and many-to-many relationships; something that relational databases don't support. Even so, the generated database works and maps to the conceptual schema.
+
+
+

@@ -56,7 +56,7 @@
                     Additional Materials for 20483</strong>
           </span>
           <span style="font-family: Tahoma; font-size: 10pt;">
-            <br />(Updated:7/11/2022 9:47:11 PM)  -- Mark Walsh, AIICT 
+            <br />(Updated:7/12/2022 12:18:37 AM)  -- Mark Walsh, AIICT 
                 </span>
         </td>
         <td style="width: 10px">
@@ -765,93 +765,104 @@
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/0-Simple linqToObjects/">0-Simple linqToObjects</a>
+            <a href="Module-07-Accessing a database/Demos/00a-TheDataReaderWay/">00a-TheDataReaderWay</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">Before we had the entity framework writing a C# application that performed CRUD operations on a database was cumbersome. Why? because we would need to write extensive amounts of code to move the data coming from a database into our C# conceptual schema (i.e. our C# classes). Relational database schema usually do not match the OO class structure we write in our code, so we'd have to write a whole heap of mapping code.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-07-Accessing a database/Demos/00b-DatabaseFirst/">00b-DatabaseFirst</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">In this example I've used the schoolDB database and created an entity model from it.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-07-Accessing a database/Demos/00c-ModelFirstDesign/">00c-ModelFirstDesign</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">This example involved adding an entity model to an empty application, then adding 'entities' to the entity model. Once done i can then generate the DDL (Data definition Language) SQL to create the database tables that match my classes.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-07-Accessing a database/Demos/00d-EDM-WithAdventureWorks/">00d-EDM-WithAdventureWorks</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">In this example I've used Microsoft's AdventureWorks database and created an entity model from it.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-07-Accessing a database/Demos/00e-simplePartialClass/">00e-simplePartialClass</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">This is not an example of accessing a database or using the entity framework. It shows how partial classes work where some of a class defintion is in one file and other parts of the definition are in different files. Partial classes are important when tools are used to generate part of a class definition and we'd like to add to that definition.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-07-Accessing a database/Demos/00f-EDM-WithAdventureWorksLinq/">00f-EDM-WithAdventureWorksLinq</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">Linq (Language Integrated Query) allows us to write C# statements that work with collections of objects. Linq queries can be written using extension methods or by using the SQL-like linq expressions.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-07-Accessing a database/Demos/00g-EDM-WithAdventureWorksLinq/">00g-EDM-WithAdventureWorksLinq</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">An exmple of using a LINQ extension method to find the average price of all products</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-07-Accessing a database/Demos/00h-ForceQueryExecution/">00h-ForceQueryExecution</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">An exmple of using a ToList() to force the execution of the Linq query on the statement where it is declared.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-07-Accessing a database/Demos/00j-Simple linqToObjects/">00j-Simple linqToObjects</a>
           </td>
           <td bgcolor="#EBEBEB" class="style2">This example is a Windows Forms application that shows how to use both Extension methods and Linq query expressions to execute a query over an array.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/00a-TheDataReaderWay/">00a-TheDataReaderWay</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">Before we had the entity framework writing a C# application that performed CRUD operations on a database was cumbersome. Why? because we would need to write extensive amounts of code to move the data coming from a database into our C# conceptual schema (i.e. our C# classes). Relational database schema usually do not match the OO class structure we write in our code, so we'd have to write a whole heap of mapping code.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/00b-DatabaseFirst/">00b-DatabaseFirst</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">In this example I've used the schoolDB database and created an entity model from it.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/00c-ModelFirstDesign/">00c-ModelFirstDesign</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">This example involved adding an entity model to an empty application, then adding 'entities' to the entity model. Once done i can then generate the DDL (Data definition Language) SQL to create the database tables that match my classes.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/00d-EDM-WithAdventureWorks/">00d-EDM-WithAdventureWorks</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">In this example I've used Microsoft's AdventureWorks database and created an entity model from it.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/00e-simplePartialClass/">00e-simplePartialClass</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">This is not an example of accessing a database or using the entity framework. It shows how partial classes work where some of a class defintion is in one file and other parts of the definition are in different files. Partial classes are important when tools are used to generate part of a class definition and we'd like to add to that definition.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/00f-EDM-WithAdventureWorksLinq/">00f-EDM-WithAdventureWorksLinq</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">Linq (Language Integrated Query) allows us to write C# statements that work with collections of objects. Linq queries can be written using extension methods or by using the SQL-like linq expressions.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/00g-EDM-WithAdventureWorksLinq/">00g-EDM-WithAdventureWorksLinq</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">An exmple of using a LINQ extension method to find the average price of all products</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/00h-ForceQueryExecution/">00h-ForceQueryExecution</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">An exmple of using a ToList() to force the execution of the Linq query on the statement where it is declared.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/3-linqToObjectsGrouping/">3-linqToObjectsGrouping</a>
+            <a href="Module-07-Accessing a database/Demos/00k-linqToObjectsGrouping/">00k-linqToObjectsGrouping</a>
           </td>
           <td bgcolor="#D7FFFF" class="style2">Use both extension methods and query expressions to perform various types of grouping.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
-            <a href="Module-07-Accessing a database/Demos/5-linqToObjectsJoins/">5-linqToObjectsJoins</a>
+            <a href="Module-07-Accessing a database/Demos/00m-linqToObjectsJoins/">00m-linqToObjectsJoins</a>
           </td>
           <td bgcolor="#EBEBEB" class="style2">Use both extension methods and query expressions to perform a join of two collections.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#D7FFFF">
-            <a href="Module-07-Accessing a database/Demos/X-EF Code First example/">X-EF Code First example</a>
+            <a href="Module-07-Accessing a database/Demos/00n-DefiningTheConceptualModelFirst/">00n-DefiningTheConceptualModelFirst</a>
           </td>
-          <td bgcolor="#D7FFFF" class="style2">EF Code first was introduced in EF 4.1. To build an EF Code first application use the NuGet Package manager to add the latest Entity Framework. The example I've written includes the use of Database.SetInitializer which was the way to update a database schema when the model changes in EF 4.1, basically it drops and re-creates the database. Since the release of EF 4.3 it's possible to perform 'database migrations'. To do this run 'Enable-Migrations' from the package manager console, change your classes (model), then run 'Add-Migration'. Lastly run 'Update-Database'. </td>
+          <td bgcolor="#D7FFFF" class="style2">In this example I defined a conceptual model first and then generated a database from it. The conceptual model has inheritance and many-to-many relationships; something that relational databases don't support. Even so, the generated database works and maps to the conceptual schema.
+
+
+
+</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
+            <a href="Module-07-Accessing a database/Demos/X-EF Code First example/">X-EF Code First example</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">EF Code first was introduced in EF 4.1. To build an EF Code first application use the NuGet Package manager to add the latest Entity Framework. The example I've written includes the use of Database.SetInitializer which was the way to update a database schema when the model changes in EF 4.1, basically it drops and re-creates the database. Since the release of EF 4.3 it's possible to perform 'database migrations'. To do this run 'Enable-Migrations' from the package manager console, change your classes (model), then run 'Add-Migration'. Lastly run 'Update-Database'. </td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
             <a href="Module-07-Accessing a database/Demos/X-EG1-MapEntityToMultipleTables/">X-EG1-MapEntityToMultipleTables</a>
           </td>
-          <td bgcolor="#EBEBEB" class="style2">Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
+          <td bgcolor="#D7FFFF" class="style2">Here is an example of defining an entity (Instructor) that maps to multiple tables (Person and OfficeAssigment) in the database and only exists
 for some rows (it's assumed a person is an instructor if they have a non-null hire date).
 You can find similar instructions of how to create and application like this here: http://msdn.microsoft.com/en-us/library/cc716698.aspx
 
@@ -860,10 +871,10 @@ You can find similar instructions of how to create and application like this her
         </tr>
         <tr>
           <td class="style3" />
-          <td bgcolor="#D7FFFF">
+          <td bgcolor="#EBEBEB">
             <a href="Module-07-Accessing a database/Demos/X-EG2-MappingMultipleTablesToAnEntity/">X-EG2-MappingMultipleTablesToAnEntity</a>
           </td>
-          <td bgcolor="#D7FFFF" class="style2">A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
+          <td bgcolor="#EBEBEB" class="style2">A 2nd example of defining an entity (Customer) that maps to multiple tables (Customer and Store) 
 in the adventureworks database. It also includes update functionality. This can be done because there 
 is a 1 to 1 relationship between the customer and store tables.
 
@@ -877,7 +888,7 @@ is a 1 to 1 relationship between the customer and store tables.
     <br />
     <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
       <span style="font-family: Verdana">
-              Mark Walsh (AIICT)  7/11/2022 9:47:11 PM</span>
+              Mark Walsh (AIICT)  7/12/2022 12:18:37 AM</span>
     </div>
   </body>
 </html>

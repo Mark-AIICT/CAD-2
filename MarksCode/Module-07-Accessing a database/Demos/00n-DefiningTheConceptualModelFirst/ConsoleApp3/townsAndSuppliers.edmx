@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="townsAndSuppliers.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="townsAndSuppliersStoreContainer">
+    <EntitySet Name="Contacts" EntityType="townsAndSuppliers.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Towns" EntityType="townsAndSuppliers.Store.Towns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts_Supplier" EntityType="townsAndSuppliers.Store.Contacts_Supplier" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts_Customer" EntityType="townsAndSuppliers.Store.Contacts_Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TownSupplier" EntityType="townsAndSuppliers.Store.TownSupplier" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_TownSupplier_Town" Association="townsAndSuppliers.Store.FK_TownSupplier_Town">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="TownSupplier" EntitySet="TownSupplier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TownSupplier_Supplier" Association="townsAndSuppliers.Store.FK_TownSupplier_Supplier">
+      <End Role="Supplier" EntitySet="Contacts_Supplier" />
+      <End Role="TownSupplier" EntitySet="TownSupplier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_inherits_Contact" Association="townsAndSuppliers.Store.FK_Supplier_inherits_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Supplier" EntitySet="Contacts_Supplier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_inherits_Contact" Association="townsAndSuppliers.Store.FK_Customer_inherits_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Customer" EntitySet="Contacts_Customer" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContactName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactAddress" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Towns">
+    <Key>
+      <PropertyRef Name="TownId" />
+    </Key>
+    <Property Name="TownId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contacts_Supplier">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="BusinessNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Capitlization" Type="decimal" Nullable="false" />
+    <Property Name="ContactId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contacts_Customer">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="FavouriteProduct" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TownSupplier">
+    <Key>
+      <PropertyRef Name="Towns_TownId" />
+      <PropertyRef Name="Suppliers_ContactId" />
+    </Key>
+    <Property Name="Towns_TownId" Type="int" Nullable="false" />
+    <Property Name="Suppliers_ContactId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TownSupplier_Town">
+    <End Role="Town" Type="townsAndSuppliers.Store.Towns" Multiplicity="1" />
+    <End Role="TownSupplier" Type="townsAndSuppliers.Store.TownSupplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Town">
+        <PropertyRef Name="TownId" />
+      </Principal>
+      <Dependent Role="TownSupplier">
+        <PropertyRef Name="Towns_TownId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TownSupplier_Supplier">
+    <End Role="TownSupplier" Type="townsAndSuppliers.Store.TownSupplier" Multiplicity="*" />
+    <End Role="Supplier" Type="townsAndSuppliers.Store.Contacts_Supplier" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="TownSupplier">
+        <PropertyRef Name="Suppliers_ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_inherits_Contact">
+    <End Role="Contact" Type="townsAndSuppliers.Store.Contacts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Supplier" Type="townsAndSuppliers.Store.Contacts_Supplier" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="Supplier">
+        <PropertyRef Name="ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_inherits_Contact">
+    <End Role="Contact" Type="townsAndSuppliers.Store.Contacts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Customer" Type="townsAndSuppliers.Store.Contacts_Customer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="townsAndSuppliers" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="townsAndSuppliersContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Contacts" EntityType="townsAndSuppliers.Contact" />
+          <EntitySet Name="Towns" EntityType="townsAndSuppliers.Town" />
+          <AssociationSet Name="TownSupplier" Association="townsAndSuppliers.TownSupplier">
+            <End Role="Town" EntitySet="Towns" />
+            <End Role="Supplier" EntitySet="Contacts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContactName" Type="String" Nullable="false" />
+          <Property Name="ContactAddress" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Supplier" BaseType="townsAndSuppliers.Contact" >
+          <Property Name="BusinessNumber" Type="String" Nullable="false" />
+          <Property Name="Capitlization" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Towns" Relationship="townsAndSuppliers.TownSupplier" FromRole="Supplier" ToRole="Town" />
+        </EntityType>
+        <EntityType Name="Customer" BaseType="townsAndSuppliers.Contact" >
+          <Property Name="FavouriteProduct" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Town">
+          <Key>
+            <PropertyRef Name="TownId" />
+          </Key>
+          <Property Name="TownId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Suppliers" Relationship="townsAndSuppliers.TownSupplier" FromRole="Town" ToRole="Supplier" />
+        </EntityType>
+        <Association Name="TownSupplier">
+          <End Type="townsAndSuppliers.Town" Role="Town" Multiplicity="*" />
+          <End Type="townsAndSuppliers.Supplier" Role="Supplier" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="townsAndSuppliersStoreContainer" CdmEntityContainer="townsAndSuppliersContainer">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="IsTypeOf(townsAndSuppliers.Contact)">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactAddress" ColumnName="ContactAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(townsAndSuppliers.Supplier)">
+        <MappingFragment StoreEntitySet="Contacts_Supplier">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="BusinessNumber" ColumnName="BusinessNumber" />
+          <ScalarProperty Name="Capitlization" ColumnName="Capitlization" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(townsAndSuppliers.Customer)">
+        <MappingFragment StoreEntitySet="Contacts_Customer">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="FavouriteProduct" ColumnName="FavouriteProduct" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towns">
+      <EntityTypeMapping TypeName="IsTypeOf(townsAndSuppliers.Town)">
+        <MappingFragment StoreEntitySet="Towns">
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TownSupplier" TypeName="townsAndSuppliers.TownSupplier" StoreEntitySet="TownSupplier">
+      <EndProperty Name="Town">
+        <ScalarProperty Name="TownId" ColumnName="Towns_TownId" />
+      </EndProperty>
+      <EndProperty Name="Supplier">
+        <ScalarProperty Name="ContactId" ColumnName="Suppliers_ContactId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
