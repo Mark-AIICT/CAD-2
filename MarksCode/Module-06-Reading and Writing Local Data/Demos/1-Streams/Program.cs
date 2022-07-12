@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace P30_System.IO_Namespace
@@ -8,10 +9,15 @@ namespace P30_System.IO_Namespace
     {
         static void Main(string[] args)
         {
-            System.IO.StreamReader reader = new System.IO.StreamReader(@"C:\temp\infile.txt");
-            // Text in from file
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:\temp\outfile.txt");
-            // Text out to file
+ 
+            Stream inStream = new FileStream(@"C:\temp\infile.txt", FileMode.Open);
+            Stream outStream = new FileStream(@"C:\temp\outfile.txt", FileMode.OpenOrCreate);
+
+
+            StreamReader reader = new System.IO.StreamReader(inStream);
+            StreamWriter writer = new System.IO.StreamWriter(outStream);
+
+
             string line;
             while ((line = reader.ReadLine()) != null)
             {

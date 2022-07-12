@@ -21,7 +21,7 @@ namespace CS
             Console.WriteLine("Before Serialisation. CustomerName={0}, Balance={1}, CreatedDate={2}, Fee={3}",
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
-            //Serialize to XML
+            //Serialize to JSON
             FileStream fs = new FileStream("c:\\temp\\data.json", FileMode.Create);
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(SavingsAccount));
             ser.WriteObject(fs,s);

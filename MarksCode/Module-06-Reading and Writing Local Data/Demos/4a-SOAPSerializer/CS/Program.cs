@@ -20,14 +20,14 @@ namespace CS
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
             //Serialize to XML
-            FileStream fs = new FileStream(@"c:\temp\SA.xml", FileMode.Create);
+            FileStream fs = new FileStream(@"c:\temp\SOAP.xml", FileMode.Create);
             IFormatter formatter = new SoapFormatter();
             formatter.Serialize(fs, s);
             fs.Close();
 
 
             //DeSerialize from XML
-            FileStream fsIn = new FileStream(@"c:\temp\SA.xml", FileMode.Open);
+            FileStream fsIn = new FileStream(@"c:\temp\SOAP.xml", FileMode.Open);
             SavingsAccount sx = (SavingsAccount)formatter.Deserialize(fsIn);
             fsIn.Close();
 

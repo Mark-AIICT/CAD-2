@@ -19,7 +19,7 @@ namespace NetContractSerializer
                                s.CustomerName, s.AccountBalance, s.GetAccountID(), s.Fee);
 
             //Serialize to XML
-            FileStream fs = new FileStream("SA.xml", FileMode.Create);
+            FileStream fs = new FileStream("c:\\temp\\NetContract.xml", FileMode.Create);
             XmlDictionaryWriter writer = XmlDictionaryWriter.CreateTextWriter(fs);
             NetDataContractSerializer ser = new NetDataContractSerializer();
             ser.WriteObject(writer, s);
@@ -27,7 +27,7 @@ namespace NetContractSerializer
 
 
             //DeSerialize from XML
-            FileStream fsIn = new FileStream("SA.xml", FileMode.Open);
+            FileStream fsIn = new FileStream("c:\\temp\\NetContract.xml", FileMode.Open);
             XmlDictionaryReader reader = XmlDictionaryReader.CreateTextReader(fsIn, new XmlDictionaryReaderQuotas());
             NetDataContractSerializer serIn = new NetDataContractSerializer();
 
@@ -44,15 +44,20 @@ namespace NetContractSerializer
     }
 
     [Serializable]
+    [DataContract(Name ="BankAccount")]
     class BankAccount
     {
+        [DataMember(Name = "AccountID")]
         private Guid AccountID;
+
+        [DataMember(Name="Bal")]
         public decimal AccountBalance { get; set; }
+
+        [DataMember(Name = "Customer")]
         public string CustomerName { get; set; }
 
         public BankAccount()
         {
-
             AccountID = Guid.NewGuid();
         }
 
@@ -63,8 +68,10 @@ namespace NetContractSerializer
     }
 
     [Serializable()]
+    [DataContract(Name = "SavingsAcct")]
     class SavingsAccount : BankAccount
     {
+        [DataMember(Name = "Fee")]
         public decimal Fee { get; set; }
 
     }
