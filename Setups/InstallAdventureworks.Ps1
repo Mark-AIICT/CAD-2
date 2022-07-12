@@ -6,4 +6,4 @@ function Unzip
         [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
 }
 
-Unzip "C:\Users\Admin\Desktop\MarksFiles\MarksCode\DatabaseFiles\adventureworks.zip" "C:\temp"
+Unzip "C:\Users\Admin\Desktop\MarksFiles\MarksCode\DatabaseFiles\adventureworks.zip" "C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA"
