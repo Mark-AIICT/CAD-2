@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Admin\source\repos\ConsoleApp3\ConsoleApp3\townsAndSuppliers.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Admin\Desktop\MarksFiles\MarksCode\Module-07-Accessing a database\Demos\00n-DefiningTheConceptualModelFirst\ConsoleApp3\townsAndSuppliers.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

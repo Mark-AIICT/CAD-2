@@ -2,13 +2,18 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WPFApp" x:Class="WPFApp.MainWindow"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="350" Width="800
+    ">
+    <Grid Margin="0,0,2,-9">
         <Border HorizontalAlignment="Left" Margin="112,34,0,0" VerticalAlignment="Top" BorderBrush="#FFD12929" BorderThickness="1">
 
             <local:CoffeeSelector x:Name="CS" Height="258" Width="153" OrderPlaced="CoffeeSelector_OrderPlaced"/>
 
         </Border>
-        <Label x:Name="lblResult" Content="Label" HorizontalAlignment="Left" Margin="329,127,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblResult" Content="Label" HorizontalAlignment="Left" Margin="290,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Person 1" HorizontalAlignment="Left" Height="29" Margin="112,0,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Person 2" HorizontalAlignment="Left" Height="29" Margin="531,10,0,0" VerticalAlignment="Top" Width="93"/>
+        <local:CoffeeSelector x:Name="CS2" HorizontalAlignment="Left" Height="250" Margin="520,44,0,0" VerticalAlignment="Top" Width="162" OrderPlaced="Person2Order"/>
+        <Label x:Name="lblResult2" Content="Label" HorizontalAlignment="Left" Margin="716,35,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="_00c_userControl.ColourButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_00c_userControl"
+             mc:Ignorable="d" Height="195.042" Width="269.688">
+    <Grid>
+        <Button x:Name="btn" Content="Button" HorizontalAlignment="Left" Height="138" Margin="33,29,0,0" VerticalAlignment="Top" Width="196" Click="btnClick"/>
+
+    </Grid>
+</UserControl>

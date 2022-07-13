@@ -1,0 +1,14 @@
+﻿<Window x:Class="_00e_SimpleBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_00e_SimpleBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn" Content="{Binding Value, ElementName=S}" HorizontalAlignment="Left" Height="{Binding Value, ElementName=S}" Margin="225,37,0,0" VerticalAlignment="Top" Width="{Binding Value, ElementName=S}"/>
+        <Slider x:Name="S" HorizontalAlignment="Left" Height="41" Margin="29,317,0,0" VerticalAlignment="Top" Width="705" Maximum="500" Value="50"/>
+
+    </Grid>
+</Window>

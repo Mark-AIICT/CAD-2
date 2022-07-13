@@ -1,0 +1,1 @@
+﻿An example here of defining a brush as a 'window' resource. The brush is then bound to multiple user controls on the UI.

@@ -17,7 +17,7 @@ namespace _00b_DatabaseFirst
                 Console.WriteLine("--------------------------------------------------------------------");
                 foreach (var student in teacher.Students)
                 {
-                    Console.WriteLine($"{student.FirstName} {student.LastName}, {student.DateOfBirth.ToLongDateString()}");
+                    Console.WriteLine($"{student}, {student.DateOfBirth.ToLongDateString()}");
 
                 }
 

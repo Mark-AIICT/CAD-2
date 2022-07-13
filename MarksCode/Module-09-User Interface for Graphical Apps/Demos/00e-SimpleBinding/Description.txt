@@ -1,0 +1,1 @@
+﻿Databinding reduces the amount of C# code we need to write. It's all about connecting proprties of two or more objects together so that if the properties of one object change those properties can change in other objects. In this example the objects are User Controls; a button and a slider.

@@ -1,7 +1,0 @@
-In this example I've created an application that exhibits
-Master/detail functionality. To understand how it works look at the 
-town.cs file and then the ObservableTownsCollection.cs file, notice
-how a customersCollection is a property of a town. Then look at the
-Window1.Xaml file and notice the DataContext property on the grid as well 
-as the ItemsSource and IsSynchronizedWithCurrentItem properties of the 
-listboxes within the grid.

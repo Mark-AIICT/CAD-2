@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="da8d895e4a0748aeb2c7353f3a0e970b" Name="Diagram1" ZoomLevel="114" >
+      <Diagram DiagramId="da8d895e4a0748aeb2c7353f3a0e970b" Name="Diagram1" ZoomLevel="150" >
         <EntityTypeShape EntityType="townsAndSuppliers.Contact" Width="1.5" PointX="3.125" PointY="1.75" />
         <EntityTypeShape EntityType="townsAndSuppliers.Supplier" Width="1.5" PointX="3.125" PointY="4.5" />
         <InheritanceConnector EntityType="townsAndSuppliers.Supplier" />
-        <EntityTypeShape EntityType="townsAndSuppliers.Customer" Width="1.5" PointX="1" PointY="4.5" />
+        <EntityTypeShape EntityType="townsAndSuppliers.Customer" Width="1.5" PointX="1" PointY="4.75" />
         <InheritanceConnector EntityType="townsAndSuppliers.Customer" />
-        <EntityTypeShape EntityType="townsAndSuppliers.Town" Width="1.5" PointX="6.5" PointY="4.375" />
+        <EntityTypeShape EntityType="townsAndSuppliers.Town" Width="1.5" PointX="6.25" PointY="4.5" />
         <AssociationConnector Association="townsAndSuppliers.TownSupplier" />
       </Diagram>
     </edmx:Diagrams>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFApp
+namespace _00a_WPFApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,16 +23,22 @@ namespace WPFApp
         public MainWindow()
         {
             InitializeComponent();
+
+            foreach (var filepath in System.IO.Directory.GetFiles("c:\\windows"))
+            {
+                lbFiles.Items.Add(filepath);
+            }
         }
 
-        private void CoffeeSelector_OrderPlaced(object sender, EventArgs e)
+        private void buttonpress(object sender, RoutedEventArgs e)
         {
-            lblResult.Content = CS.Order;
+            dateTextBlock.Text = $"last time message was displayed: {DateTime.Now.ToLongTimeString()}";
+            MessageBox.Show($"the entered text is \"{enteredText.Text}\"");
         }
 
-        private void Person2Order(object sender, EventArgs e)
+        private void ListDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            lblResult2.Content = CS2.Order;
+            MessageBox.Show($"you double clicked \"{lbFiles.SelectedItem}\"");
         }
     }
 }

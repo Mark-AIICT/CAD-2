@@ -1,0 +1,1 @@
+﻿When you're creating a WPF application and you find that certain parts of the user interface are repeated, that may be a good candidate for creating a user control. User controls can be written in Xaml and have C# code, they can have properties, methods, events and all the usual stuff a class has. Once defined they can be dragged onto the MainWindow.Xaml from the toolbox.

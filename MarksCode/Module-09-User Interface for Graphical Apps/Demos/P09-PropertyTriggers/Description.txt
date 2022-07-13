@@ -1,0 +1,1 @@
+﻿Property triggers reduce the amount of C# code to write. In this example, fonts and colours of buttons and text boxes change as the mouse is moved over them and when buttons are pressed. 

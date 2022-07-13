@@ -1,0 +1,15 @@
+﻿<Window x:Class="_00c_userControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_00c_userControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <local:ColourButton HorizontalAlignment="Left" Height="198" Margin="43,74,0,0" VerticalAlignment="Top" Width="261" ButtonColour="RED"/>
+        <local:ColourButton HorizontalAlignment="Left" Height="184" Margin="408,74,0,0" VerticalAlignment="Top" Width="266" ButtonColour="#FFB9FF00"/>
+        <local:ColourButton HorizontalAlignment="Left" Height="176" Margin="236,233,0,0" VerticalAlignment="Top" Width="237" ButtonColour="#FF1DE0CE"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,1 @@
+﻿Property triggers reduce the amount of C# code to write. In this example, storyboard animations are run to fade inamges in and out as the mouse moves over them. 
