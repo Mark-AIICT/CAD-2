@@ -1,0 +1,1 @@
+A Barrier object is used in this example to have three tasks wait for user input from the console before proceeding and finishing.

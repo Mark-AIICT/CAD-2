@@ -1,0 +1,11 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="262" Width="407">
+    <Grid>
+        <Button Content="Parallel Tasks" HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
+        <ListBox x:Name="listBoxResults" Margin="25,93,24,22"/>
+        <Button Content="Serial Code" HorizontalAlignment="Left" Margin="269,50,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>

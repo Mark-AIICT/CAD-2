@@ -1,0 +1,1 @@
+The issue with this application is the UI is frozen while the calculation is being made. That's because the Main Thread is being used for both the UI and the calculation.
