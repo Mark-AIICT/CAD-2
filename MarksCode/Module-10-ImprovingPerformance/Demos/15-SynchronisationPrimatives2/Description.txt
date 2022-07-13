@@ -1,0 +1,1 @@
+In this example I'm using a semaphore to ensure that a maximum of two tasks run simultaneously and a CountdownEvent to signal to the main thread that all three tasks are done.

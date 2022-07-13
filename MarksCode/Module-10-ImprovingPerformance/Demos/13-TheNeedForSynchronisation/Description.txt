@@ -1,0 +1,1 @@
+What we have here is a synchronosation issue. Run the application and press the button several times. Each time you press you'll get a different result and most of the time the result will not be corect.

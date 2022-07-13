@@ -1,0 +1,1 @@
+The purpose of this example is to demonstrate the async and await keywords.The avantage is that the asynchronous capabilities are written into the function being called from the WPF application; this makes writing the WPF application or any other application that calls the background utility much more simple.

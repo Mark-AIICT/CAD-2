@@ -1,0 +1,1 @@
+An example of using a ParallelFor loop. It's interesting to run this by setting a breakpoint within the ParallelFor and then looking at the Threads and Parallel Tasks debug windows.

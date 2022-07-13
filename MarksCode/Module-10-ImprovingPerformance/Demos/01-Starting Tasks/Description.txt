@@ -1,0 +1,1 @@
+Tasks can be started in a number of ways. In this example Tasks are started with the Start() method, the Task.Factory.StartNew() method and the Task.Run() method. 
