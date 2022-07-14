@@ -1,1 +1,0 @@
-Worker threads cannot access controls that were created on the Main thread. Dispatcher.Invoke is required when calls must be marshalled from a worker thread to the Main thread. 

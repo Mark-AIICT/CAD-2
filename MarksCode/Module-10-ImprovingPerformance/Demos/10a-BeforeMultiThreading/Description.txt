@@ -1,0 +1,1 @@
+This is a WPF application that counts the number of decendent files in a given path. The Application UI is frozen while the calculation is happening because it is only using one thread.

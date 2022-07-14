@@ -56,7 +56,7 @@
                     Additional Materials for 20483</strong>
           </span>
           <span style="font-family: Tahoma; font-size: 10pt;">
-            <br />(Updated:14/07/2022 6:41:56 PM)  -- Mark Walsh, AIICT 
+            <br />(Updated:7/14/2022 4:45:00 PM)  -- Mark Walsh, AIICT 
                 </span>
         </td>
         <td style="width: 10px">
@@ -1164,86 +1164,93 @@ App.Xaml file to see how merged Resource files can work.</td>
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
-            <a href="Module-10-ImprovingPerformance/Demos/10a-SimpleWPFBeforeTasks/">10a-SimpleWPFBeforeTasks</a>
+            <a href="Module-10-ImprovingPerformance/Demos/10a-BeforeMultiThreading/">10a-BeforeMultiThreading</a>
           </td>
-          <td bgcolor="#EBEBEB" class="style2">The issue with this application is the UI is frozen while the calculation is being made. That's because the Main Thread is being used for both the UI and the calculation.</td>
+          <td bgcolor="#EBEBEB" class="style2">This is a WPF application that counts the number of decendent files in a given path. The Application UI is frozen while the calculation is happening because it is only using one thread.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#D7FFFF">
-            <a href="Module-10-ImprovingPerformance/Demos/10b-SimpleWPFWithTask/">10b-SimpleWPFWithTask</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">This is a WPF application that determines the combined length of files in a given path. The Application starts a Task to perform the calculation meaning that the UI is not frozen while the calculation is happening.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-10-ImprovingPerformance/Demos/10c-UsingDispatcher/">10c-UsingDispatcher</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">Worker threads cannot access controls that were created on the Main thread. Dispatcher.Invoke is required when calls must be marshalled from a worker thread to the Main thread. </td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-10-ImprovingPerformance/Demos/10d-AsyncAwait/">10d-AsyncAwait</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">The purpose of this example is to demonstrate the async and await keywords.The avantage is that the asynchronous capabilities are written into the function being called from the WPF application; this makes writing the WPF application or any other application that calls the background utility much more simple.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#EBEBEB">
-            <a href="Module-10-ImprovingPerformance/Demos/11a-BeforeAsyncAwait/">11a-BeforeAsyncAwait</a>
-          </td>
-          <td bgcolor="#EBEBEB" class="style2">This is a WPF application that counts the number of decendent files in a given path. The Application starts a Task to perform the calculation meaning that the UI is not frozen while the calculation is happening.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-10-ImprovingPerformance/Demos/11b-WithAsyncAwait/">11b-WithAsyncAwait</a>
+            <a href="Module-10-ImprovingPerformance/Demos/10b-BeforeAsyncAwait/">10b-BeforeAsyncAwait</a>
           </td>
           <td bgcolor="#D7FFFF" class="style2">This is a WPF application that counts the number of decendent files in a given path. The Application starts a Task to perform the calculation meaning that the UI is not frozen while the calculation is happening.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
+            <a href="Module-10-ImprovingPerformance/Demos/10c-WithAsyncAwait/">10c-WithAsyncAwait</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">This is a WPF application that counts the number of decendent files in a given path. The Application starts a Task to perform the calculation meaning that the UI is not frozen while the calculation is happening.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-10-ImprovingPerformance/Demos/11a-SimpleWPFBeforeTasks/">11a-SimpleWPFBeforeTasks</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">The issue with this application is the UI is frozen while the calculation is being made. That's because the Main Thread is being used for both the UI and the calculation.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-10-ImprovingPerformance/Demos/11b-SimpleWPFWithTask/">11b-SimpleWPFWithTask</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">This is a WPF application that determines the combined length of files in a given path. The Application starts a Task to perform the calculation meaning that the UI is not frozen while the calculation is happening.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
+            <a href="Module-10-ImprovingPerformance/Demos/11c-UsingDispatcher/">11c-UsingDispatcher</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">Worker threads cannot access controls that were created on the Main thread. Dispatcher.Invoke is required when calls must be marshalled from a worker thread to the Main thread. </td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
+            <a href="Module-10-ImprovingPerformance/Demos/11d-AsyncAwait/">11d-AsyncAwait</a>
+          </td>
+          <td bgcolor="#EBEBEB" class="style2">The purpose of this example is to demonstrate the async and await keywords.The avantage is that the asynchronous capabilities are written into the function being called from the WPF application; this makes writing the WPF application or any other application that calls the background utility much more simple.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#D7FFFF">
             <a href="Module-10-ImprovingPerformance/Demos/12-AsyncAwaitWithCallback/">12-AsyncAwaitWithCallback</a>
           </td>
-          <td bgcolor="#EBEBEB" class="style2">The purpose of this example is to demonstrate the async and await keywords using a custom callback function. The avantage is that the asynchronous capabilities are written into the function being called from the WPF application; this makes writing the WPF application or any other application that calls the background utility much more simple.</td>
+          <td bgcolor="#D7FFFF" class="style2">The purpose of this example is to demonstrate the async and await keywords using a custom callback function. The avantage is that the asynchronous capabilities are written into the function being called from the WPF application; this makes writing the WPF application or any other application that calls the background utility much more simple.</td>
         </tr>
         <tr>
           <td class="style3" />
-          <td bgcolor="#D7FFFF">
+          <td bgcolor="#EBEBEB">
             <a href="Module-10-ImprovingPerformance/Demos/13-TheNeedForSynchronisation/">13-TheNeedForSynchronisation</a>
           </td>
-          <td bgcolor="#D7FFFF" class="style2">What we have here is a synchronosation issue. Run the application and press the button several times. Each time you press you'll get a different result and most of the time the result will not be corect.</td>
+          <td bgcolor="#EBEBEB" class="style2">What we have here is a synchronosation issue. Run the application and press the button several times. Each time you press you'll get a different result and most of the time the result will not be corect.</td>
         </tr>
         <tr>
           <td class="style3" />
-          <td bgcolor="#EBEBEB">
+          <td bgcolor="#D7FFFF">
             <a href="Module-10-ImprovingPerformance/Demos/14-SynchronisationPrimatives/">14-SynchronisationPrimatives</a>
           </td>
-          <td bgcolor="#EBEBEB" class="style2">An example of using a ManualResetEventSlim object.</td>
-        </tr>
-        <tr>
-          <td class="style3" />
-          <td bgcolor="#D7FFFF">
-            <a href="Module-10-ImprovingPerformance/Demos/15-SynchronisationPrimatives2/">15-SynchronisationPrimatives2</a>
-          </td>
-          <td bgcolor="#D7FFFF" class="style2">In this example I'm using a semaphore to ensure that a maximum of two tasks run simultaneously and a CountdownEvent to signal to the main thread that all three tasks are done.</td>
+          <td bgcolor="#D7FFFF" class="style2">An example of using a ManualResetEventSlim object.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#EBEBEB">
-            <a href="Module-10-ImprovingPerformance/Demos/16-SynchronisationPrimatives3/">16-SynchronisationPrimatives3</a>
+            <a href="Module-10-ImprovingPerformance/Demos/15-SynchronisationPrimatives2/">15-SynchronisationPrimatives2</a>
           </td>
-          <td bgcolor="#EBEBEB" class="style2">A Barrier object is used in this example to have three tasks wait for user input from the console before proceeding and finishing.</td>
+          <td bgcolor="#EBEBEB" class="style2">In this example I'm using a semaphore to ensure that a maximum of two tasks run simultaneously and a CountdownEvent to signal to the main thread that all three tasks are done.</td>
         </tr>
         <tr>
           <td class="style3" />
           <td bgcolor="#D7FFFF">
+            <a href="Module-10-ImprovingPerformance/Demos/16-SynchronisationPrimatives3/">16-SynchronisationPrimatives3</a>
+          </td>
+          <td bgcolor="#D7FFFF" class="style2">A Barrier object is used in this example to have three tasks wait for user input from the console before proceeding and finishing.</td>
+        </tr>
+        <tr>
+          <td class="style3" />
+          <td bgcolor="#EBEBEB">
             <a href="Module-10-ImprovingPerformance/Demos/17-ConcurrentCollections/">17-ConcurrentCollections</a>
           </td>
-          <td bgcolor="#D7FFFF" class="style2">When running this application imagine a coffee shop. It takes a customer 50ms to place an order and baristas 150ms to make the coffee. The coffee shop has been set up with three baristas. You'll see that the program uses a ConcurrentQueue so that multiple threads can access it simultaneously.</td>
+          <td bgcolor="#EBEBEB" class="style2">When running this application imagine a coffee shop. It takes a customer 50ms to place an order and baristas 150ms to make the coffee. The coffee shop has been set up with three baristas. You'll see that the program uses a ConcurrentQueue so that multiple threads can access it simultaneously.</td>
         </tr>
       </table>
     </div>
@@ -1251,7 +1258,7 @@ App.Xaml file to see how merged Resource files can work.</td>
     <br />
     <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
       <span style="font-family: Verdana">
-              Mark Walsh (AIICT)  14/07/2022 6:41:56 PM</span>
+              Mark Walsh (AIICT)  7/14/2022 4:45:00 PM</span>
     </div>
   </body>
 </html>
