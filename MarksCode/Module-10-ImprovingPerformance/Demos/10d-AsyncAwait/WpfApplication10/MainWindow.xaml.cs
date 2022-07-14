@@ -31,18 +31,11 @@ namespace WpfApplication10
         {
 
             //SEE! Simple code
-
             txtResult.Text = "Calculating...";
-
-           FileUtil util = new FileUtil();
-
+            FileUtil util = new FileUtil();
             string pth = txtPath.Text;
-
             long result = await util.GetTotalBytesAsync(pth);
-
             txtResult.Text = "Result=" + result.ToString();
-
-
         }
 
       

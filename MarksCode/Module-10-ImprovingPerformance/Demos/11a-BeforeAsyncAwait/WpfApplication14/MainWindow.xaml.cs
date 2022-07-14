@@ -27,6 +27,7 @@ namespace WpfApplication14
         public MainWindow()
         {
             InitializeComponent();
+            NormalState();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -34,12 +35,14 @@ namespace WpfApplication14
             cancellationTokenSource = new CancellationTokenSource();
 
             Task Tsk = new Task(MyFunction, T.Text);
+            CountingState();
             Tsk.Start();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             cancellationTokenSource.Cancel();
+            NormalState();
         }
 
         void MyFunction(object p)
@@ -51,7 +54,10 @@ namespace WpfApplication14
                 MessageBox.Show(string.Format("There are {0} files in all directories below {1}",
                                         result, p));
 
-               
+                this.Dispatcher.BeginInvoke(new Action(()=>
+                {
+                    NormalState();
+                }));
             }
             catch (OperationCanceledException ex)
             {
@@ -84,6 +90,18 @@ namespace WpfApplication14
 
         
 
-        
+        private void CountingState()
+        {
+            btnCount.IsEnabled = false;
+            btnCancel.IsEnabled = true;
+            lblMessage.Content = "Counting in progress....Please wait...";
+        }
+
+        private void NormalState()
+        {
+            btnCount.IsEnabled = true;
+            btnCancel.IsEnabled = false;
+            lblMessage.Content = "";
+        }
     }
 }

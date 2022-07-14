@@ -15,15 +15,29 @@ namespace ConsoleApplication1
 
             // Create the continuation task.
             // The delegate takes the result of the antecedent task as an argument.
-            Task<string> secondTask = firstTask.ContinueWith((antecedent) => String.Format("{0}, World!", antecedent.Result));
+            Task<string> secondTask = firstTask.ContinueWith((x) =>
+                                            {
+                                                DoSomethingThatTakesALongTime();
+                                                return String.Format($"{ x.Result}, World!");
+                                            }
+            );
 
             // Start the antecedent task.
             firstTask.Start();
-
             secondTask.Wait();
             Console.WriteLine(secondTask.Result);
             Console.WriteLine("Done. Press enter to exit");
             Console.ReadLine();
+        }
+
+        private static void DoSomethingThatTakesALongTime()
+        {
+            decimal result = 0;
+            for (decimal i = 0; i < 10000000M; i++)
+            {
+                result += i;
+            }
+
         }
     }
 }
