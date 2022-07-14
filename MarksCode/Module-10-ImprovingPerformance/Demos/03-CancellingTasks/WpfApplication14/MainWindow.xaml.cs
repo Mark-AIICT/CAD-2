@@ -27,6 +27,7 @@ namespace WpfApplication14
         public MainWindow()
         {
             InitializeComponent();
+            NormalState();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -34,7 +35,14 @@ namespace WpfApplication14
             cancellationTokenSource = new CancellationTokenSource();
 
             Task Tsk = new Task(MyFunction, T.Text);
+            CountingState();
             Tsk.Start();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            cancellationTokenSource.Cancel();
+            NormalState();
         }
 
         void MyFunction(object p)
@@ -49,7 +57,7 @@ namespace WpfApplication14
             catch (OperationCanceledException ex)
             {
 
-                MessageBox.Show("OK Canceled");
+                MessageBox.Show(ex.Message);
             }
    
         }
@@ -78,9 +86,20 @@ namespace WpfApplication14
             return filesInPath;
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        
+
+        private void CountingState()
         {
-            cancellationTokenSource.Cancel();
+            btnCount.IsEnabled = false;
+            btnCancel.IsEnabled = true;
+            lblMessage.Content = "Counting in progress....Please wait...";
+        }
+
+        private void NormalState()
+        {
+            btnCount.IsEnabled = true;
+            btnCancel.IsEnabled = false;
+            lblMessage.Content = "";
         }
     }
 }

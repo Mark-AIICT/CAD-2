@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Count Files" HorizontalAlignment="Left" Margin="47,55,0,0" VerticalAlignment="Top" Width="106" Height="45" Click="Button_Click_1"/>
-        <TextBox x:Name="T" HorizontalAlignment="Left" Height="23" Margin="47,140,0,0" TextWrapping="Wrap" Text="C:\Windows" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="178,55,0,0" VerticalAlignment="Top" Width="87" Height="45" Click="Button_Click_2"/>
+        <Button x:Name="btnCount" Content="Count Files" HorizontalAlignment="Left" Margin="47,55,0,0" VerticalAlignment="Top" Width="106" Height="45" Click="Button_Click_1"/>
+        <TextBox x:Name="T" Height="23" Margin="47,140,31,0" TextWrapping="Wrap" Text="C:\Windows" VerticalAlignment="Top"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="178,55,0,0" VerticalAlignment="Top" Width="87" Height="45" Click="Button_Click_2"/>
+        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="47,194,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
