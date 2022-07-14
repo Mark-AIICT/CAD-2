@@ -1,0 +1,1 @@
+A simple Console application that starts a Task to join together several strings. In this case notice that I pass one parameter to the Task and that parameter is a collection of strings.

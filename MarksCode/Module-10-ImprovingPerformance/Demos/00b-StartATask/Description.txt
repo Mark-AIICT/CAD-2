@@ -1,0 +1,1 @@
+A simple Console application that starts a Task to cube a number

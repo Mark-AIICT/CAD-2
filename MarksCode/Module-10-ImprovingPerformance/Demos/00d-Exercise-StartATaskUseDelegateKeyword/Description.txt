@@ -1,0 +1,1 @@
+A simple Console application that starts a Task to cube a number. Ths time the code uses a delegate. I don't reckon I'd do things this way as it's more code than using a Lambda.
