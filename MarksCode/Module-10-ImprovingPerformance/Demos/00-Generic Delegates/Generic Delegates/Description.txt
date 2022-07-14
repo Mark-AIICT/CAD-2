@@ -1,1 +1,0 @@
-﻿A simple application showing the use of Action<T,T,T> and Func<T,T,T, out T> 
