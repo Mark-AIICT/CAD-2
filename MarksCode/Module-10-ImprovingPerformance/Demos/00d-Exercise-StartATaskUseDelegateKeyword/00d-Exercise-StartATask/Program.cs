@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _00d_Exercise_StartATask
 {
-    delegate string MyDelegate(List<string> s);
+    delegate string MyDelegate(object s);
     class Program
     {
         static void Main(string[] args)
@@ -19,7 +19,7 @@ namespace _00d_Exercise_StartATask
 
             MyDelegate pointerToMyJoiningFunction = JoinStrings;
 
-            Task<string> T = new Task<string>(new Func<List<string>,string>>(JoinStrings), strings);
+            Task<string> T = new Task<string>(new Func<string>(pointerToMyJoiningFunction), strings);
 
 
             T.Start();
@@ -31,7 +31,7 @@ namespace _00d_Exercise_StartATask
             Console.ReadLine();
             }
 
-        static string JoinStrings(List<string> x)
+        static string JoinStrings(object x)
         {
 
             string result = "";
