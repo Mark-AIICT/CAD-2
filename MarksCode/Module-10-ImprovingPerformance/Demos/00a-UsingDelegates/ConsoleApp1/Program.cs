@@ -19,13 +19,7 @@ namespace ConsoleApp1
             Func<int, int, string, int> y = AddThem2;
             Console.WriteLine(y(5,6,"7"));
 
-            //using a lambda
-            Func<int, int, string, int> T = (X,Y,Z) => X + Y + Convert.ToInt32(Z);
-            Console.WriteLine(T(8, 9, "10"));
-
-
-
-
+           
             Console.ReadLine();
         }
 
