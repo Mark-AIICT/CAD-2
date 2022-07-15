@@ -39,6 +39,11 @@ choco install dotnet-6.0-sdk -y
 choco install dotnetfx -Y
 choco install netfx-4.7.2 -Y
 
+cmd /C "code --install-extension ms-dotnettools.csharp --force"
+cmd /C "code --install-extension ms-dotnettools.vscode-dotnet-runtime --force"
+cmd /C "code --install-extension eamodio.gitlens --force"
+cmd /C "code --install-extension donjayamanne.githistory --force"
+
 
 choco install notepadplusplus -y
 choco install fiddler -y
@@ -68,5 +73,5 @@ REM Install Adventureworks
 
 echo "The lab computer needs to restart to install changes"
 
-cmd /C shutdown -r -f -T 10
+cmd /C shutdown -r -f -T 3
 

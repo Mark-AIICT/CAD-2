@@ -24,6 +24,7 @@
 10. Installs .net framework 4.7.2
 10. Installs .net framework 4.8
 11. Installs .net framework 6.0
+11. Adds several extensions to VSCode
 12. Installs Notepad++
 13. Installs Fiddler
 13. Installs PostMan
