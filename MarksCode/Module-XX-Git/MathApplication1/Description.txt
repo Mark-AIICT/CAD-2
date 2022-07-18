@@ -1,0 +1,1 @@
+This is a small and simple console application that we used to perform collaborative work in GitHub.
