@@ -18,7 +18,7 @@ namespace _00b_StartATask
             {
                 Console.WriteLine("Calculation has started. Please wait....");
                 DoSomethingThatTakesALongTime();
-                Console.Write($"the cube of {x} is ");
+                Console.Write($"the cube of {p} is ");
                 Console.WriteLine(Convert.ToInt32(p) * Convert.ToInt32(p) * Convert.ToInt32(p));
             }, x);
 
