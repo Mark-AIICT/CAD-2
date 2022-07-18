@@ -59,8 +59,10 @@ namespace WPFApp
             T2.Start();
 
             //Try commenting out the next two lines
-            mres1.Wait();
-            mres2.Wait();
+            mres1.Wait(); //Waits for the FIRST task to execute 'Set', which is an indication that it has finished
+            mres2.Wait();  //Waits for the SECOND task to execute 'Set', which is an indication that it has finished
+
+
 
             MessageBox.Show(string.Format("N={0}, X={1}", N, X));
         }

@@ -11,8 +11,8 @@ namespace App
     {
         static void Main(string[] args)
         {
-            SemaphoreSlim sph = new SemaphoreSlim(2);
-            CountdownEvent cde = new CountdownEvent(3);
+            SemaphoreSlim sph = new SemaphoreSlim(2); //two people are allowed at a time into the nightclub
+            CountdownEvent cde = new CountdownEvent(3); //three people must have had a dance before the app is complete
 
             long N = 0;
             long X = 0;
@@ -20,15 +20,17 @@ namespace App
 
             Task T1 = new Task(() =>
             {
-                sph.Wait();
+                sph.Wait(); //bouncer lets them in 
                 Console.WriteLine("T1 is in...");
+
+                //time for dancing
                 for (long i = 0; i < 40000000M; i++)
                 {
                     N += i;
                 }
                 Console.WriteLine("T1 is done...releasing semaphore");
-                sph.Release();
-                cde.Signal(1);
+                sph.Release(); //person leaves
+                cde.Signal(1);  //Says on the way out "I just did some dancing"
                
 
             });
