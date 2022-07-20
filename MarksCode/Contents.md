@@ -6,7 +6,7 @@
                     Additional Materials for 20483</strong>
       </span>
       <span style="font-family: Tahoma; font-size: 10pt;">
-        <br />(Updated:19/07/2022 8:47:04 AM)  -- Mark Walsh, AIICT 
+        <br />(Updated:20/07/2022 11:23:10 AM)  -- Mark Walsh, AIICT 
                 </span>
     </td>
   </tr>
@@ -166,10 +166,22 @@ App.Xaml file to see how merged Resource files can work.</td></tr></table>
         <b>Description</b>
       </td>
     </tr>Demos<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-Git/Demos/MathApplication1/">MathApplication1</a></td><td bgcolor="#D7FFFF" class="style2">This is a small and simple console application that we used to perform collaborative work in GitHub.</td></tr></table>
+  <h2>Module-XX-REST-API ...... 
+    </h2>
+  <table>
+    <tr>
+      <td class="style3" />
+      <td>
+        <b>Title</b>
+      </td>
+      <td class="style2">
+        <b>Description</b>
+      </td>
+    </tr>01-WebRequest<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/01-WebRequest/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>02-REST-Client-GetOneTown<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/02-REST-Client-GetOneTown/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>02-REST-Client-GetOneTownBetterWay<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/02-REST-Client-GetOneTownBetterWay/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>03-REST-Client-GetAllTowns<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/03-REST-Client-GetAllTowns/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>04-REST-Client-AddTown<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/04-REST-Client-AddTown/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>05-REST-Client-UpdateTown<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/05-REST-Client-UpdateTown/ConsoleApplication22/">ConsoleApplication22</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>RESTapi-ShoppingCart<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/RESTapi-ShoppingCart/REST-API/">REST-API</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr>RESTapi-Towns<br /><br /><tr><td class="style3" /><td bgcolor="#D7FFFF"><a href="Module-XX-REST-API/RESTapi-Towns/REST-API/">REST-API</a></td><td bgcolor="#D7FFFF" class="style2"></td></tr></table>
 </div>
 <br />
 <br />
 <div style="width: 100%;         height: 34px; border-right: black thin solid; padding-right: 5px; border-top: black thin solid; padding-left: 5px; padding-bottom: 5px; border-left: black thin solid; padding-top: 5px; border-bottom: black thin solid;">
   <span style="font-family: Verdana">
-          Mark Walsh (AIICT)  19/07/2022 8:47:04 AM</span>
+          Mark Walsh (AIICT)  20/07/2022 11:23:10 AM</span>
 </div>
