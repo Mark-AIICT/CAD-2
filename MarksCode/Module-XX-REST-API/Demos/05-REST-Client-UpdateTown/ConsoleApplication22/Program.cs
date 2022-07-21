@@ -17,23 +17,15 @@ namespace ConsoleApplication22
     {
         static void Main(string[] args)
         {
-            Action task = new Action(RestCalls);
+            Action action = new Action(RestCallsAsync);
+            Task.Run(action).Wait();
             Console.WriteLine("Updating....\n\n");
-            Console.WriteLine("New database content....\n\n");
-
-            Task.Run(task).Wait();
-
             Console.WriteLine("\n\nPress any key to end");
             Console.ReadKey();
         }
 
-        static async void RestCalls()
+        static async void RestCallsAsync()
         {
-            try
-            {
-
-
-
                 HttpClient client = new HttpClient();
                 client.DefaultRequestHeaders
                   .Accept
@@ -42,43 +34,14 @@ namespace ConsoleApplication22
                 var values = new Dictionary<string, string>
                   {
                       { "PostCode", "3333" },
-                      { "TownName", "Dubbo" }
+                      { "TownName", "Parramatta" }
                   };
 
                 var content = new System.Net.Http.StringContent(JsonConvert.SerializeObject(values),
                                     Encoding.UTF8,
                                     "application/json");//CONTENT-TYPE header);
 
-
                 var updateResponse = await client.PostAsync("http://localhost:50532/api/values",content);
-
-
-                //show the new database content
-                var response = await client.GetAsync("http://localhost:50532/api/values");
-                var responseString = await response.Content.ReadAsStringAsync();
-
-
-                List<Town> towns = JsonConvert.DeserializeObject<List<Town>>(responseString);
-
-                foreach (var t in towns)
-                {
-                    Console.WriteLine($"Post Code={t.PostCode}, Town={t.TownName}");
-
-                }
-            }
-            catch (WebException xcp)
-            {
-
-                Console.WriteLine(xcp.ToString());
-                Console.ReadKey();
-            }
-            catch (Exception xcp)
-            {
-
-                Console.WriteLine(xcp.ToString());
-                Console.ReadKey();
-            }
-
         }
     }
 }

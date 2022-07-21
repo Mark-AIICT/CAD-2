@@ -28,24 +28,10 @@ namespace ConsoleApplication22
 
         static async void RestCallsAsync()
         {
-
             HttpClient client = new HttpClient();
 
-            Console.WriteLine("Retrieving....\n\n");
-            var response = await client.GetAsync("http://localhost:50532/api/values");
-            var s = await response.Content.ReadAsStringAsync();
-
-            List<Town> towns = JsonConvert.DeserializeObject<List<Town>>(s);
-
-            foreach (var t in towns)
-            {
-                Console.WriteLine($"Post Code={t.PostCode}, Town={t.TownName}");
-
-            }
-
-            Console.WriteLine("\n\nPress any key to end");
-            Console.ReadKey();
-
+            Console.WriteLine("Deleting....\n\n");
+            var deleteResponse = await client.DeleteAsync("http://localhost:50532/api/values/4444");
         }
     }
 }
