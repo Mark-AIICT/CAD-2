@@ -16,8 +16,8 @@ namespace REST_API
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{postCode}",
-                defaults: new { postCode = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{cartNumber}",
+                defaults: new { cartNumber = RouteParameter.Optional }
             );
         }
     }
