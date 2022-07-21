@@ -1,0 +1,1 @@
+The MEF is very interesting. It gives you the capability of writing some code, deploying the binary and being able to extend it's functionality without needing to re-compile/re-deploy. The application has a dependency on an interface and pickup assemblies, execute their functions as long as they implement the interface. This is a very simple conept just to explain the concept.

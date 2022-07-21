@@ -1,0 +1,1 @@
+An application that uses Symmetric encryption combined with Salt to encrypt and decrypt a string.

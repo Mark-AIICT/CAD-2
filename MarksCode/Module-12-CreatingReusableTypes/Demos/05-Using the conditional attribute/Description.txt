@@ -1,0 +1,1 @@
+The Conditional attribute can be used to conditionally compile functions within a class.

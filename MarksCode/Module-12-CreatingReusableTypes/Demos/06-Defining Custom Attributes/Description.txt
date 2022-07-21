@@ -1,0 +1,1 @@
+A custom attribute called MLogger is used to define the name of a file where the data of an object might can be dumped.

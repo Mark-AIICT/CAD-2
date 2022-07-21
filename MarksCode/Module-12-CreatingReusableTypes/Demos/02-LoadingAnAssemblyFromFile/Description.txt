@@ -1,0 +1,1 @@
+In this example I load an assembly directly into an executing application and then call a method.

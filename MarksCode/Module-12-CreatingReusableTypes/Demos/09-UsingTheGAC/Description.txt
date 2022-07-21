@@ -1,0 +1,1 @@
+This example includes a signed DLL that can be installed to the GAC using gacutil.exe -i. It also includes a config file that can be used for binding redirection.

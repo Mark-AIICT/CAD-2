@@ -1,0 +1,1 @@
+A simple example of calling Excel from a Console application. Before the dynamic keyword this was a messy process because of the disparity of COM vs .Net calling conventions. There was a fair bit more code and 'Type.Missing' all over the place because optional parameters in COM had to have a placeholder.

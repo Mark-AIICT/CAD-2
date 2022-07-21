@@ -1,0 +1,1 @@
+This example really shows the concept of MEF. I.e. the capability of writing some code, deploying the binary and being able to extend it's functionality without needing to re-compile/re-deploy. The application has a dependency on an interface and pickup assemblies, execute their functions as long as they implement the interface

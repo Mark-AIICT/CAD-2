@@ -1,0 +1,1 @@
+This is an example of using the CodeDom. I've created an application that generates and compiles some simple code. Make sure the path c:\temp exists before running it.
