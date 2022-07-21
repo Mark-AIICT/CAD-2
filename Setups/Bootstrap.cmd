@@ -26,8 +26,9 @@ choco install googlechrome -y --ignore-checksums
 choco install setdefaultbrowser -y
 cmd /C "setdefaultbrowser chrome"
 
-REM install octotree on chrome
+REM install octotree & JSON Formatter on chrome
 reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist /v 1 /t REG_SZ /d bkhaagjahfmjljalopjnoealnfndnagc /f
+reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist /v 1 /t REG_SZ /d bcjindcccaagfpapjjmafapmmgkkhgoa /f
 
 
 git config --global user.name "Student@DDLS"
