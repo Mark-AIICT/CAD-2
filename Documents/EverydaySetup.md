@@ -28,6 +28,7 @@
 12. Installs Notepad++
 13. Installs Fiddler
 13. Installs PostMan
+13. Installs Nuget
 13. Removes out-of-date Lab files and lab instructions.
 14. Adds the latest version of Lab files to the desktop.
 15. Unpins Microsoft Edge from the task bar.
