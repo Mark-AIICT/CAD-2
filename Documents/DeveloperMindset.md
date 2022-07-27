@@ -1,4 +1,4 @@
-# What I try to be as a developer
+# The mindset of a developer
 
 ### Courage
 - The courage to make mistakes.
