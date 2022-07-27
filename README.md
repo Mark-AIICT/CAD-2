@@ -18,3 +18,4 @@ This page is a central table of contents that has references to all the associat
 7. I've added slides for Git and REST here [**here**](Documents/AdditionalModules/).
 8. [The daily schedule (approximately)](https://github.com/ddls-mark/emu-beak/blob/main/Documents/CAD-Learning-Plan.md).
 9. [Instructions for Additional Exercises](Documents/Exercises/)
+10. [Developer Mindset](Documents/DeveloperMindset.md)
