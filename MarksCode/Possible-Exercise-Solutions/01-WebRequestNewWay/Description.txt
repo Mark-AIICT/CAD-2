@@ -1,0 +1,1 @@
+This example uses the http request object to call the Google Books API. The URL includes the isbn number of a book and JSON is returned. I added NewtonSoft JSON.Net using NuGet to the applicatiion to deserialise the JSON and display the description of the book.

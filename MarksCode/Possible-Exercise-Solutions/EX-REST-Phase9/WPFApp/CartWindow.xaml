@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPFApp.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="CartWindow" Height="450" Width="800">
+    <Grid x:Name="grdCart">
+        <TextBlock x:Name="txCartNumber" Text="{Binding Path=CartNumber}" HorizontalAlignment="Left" Margin="149,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="txCustomerName" Text="{Binding Path=CustomerName}" HorizontalAlignment="Left" Height="23" Margin="496,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lbItems" Margin="54,141,48,107">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="{Binding Path=ItemNumber}" Grid.Row="0" Grid.Column="0" />
+                        <TextBox Text="{Binding Path=ItemDescription}" Grid.Row="0" Grid.Column="2"/>
+                        <TextBox Text="{Binding Path=ItemPrice}" Grid.Row="0" Grid.Column="4"/>
+                        <TextBox Text="{Binding Path=ItemQuantity}" Grid.Row="0" Grid.Column="6"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="btnSave" Content="Save Cart" HorizontalAlignment="Left" Margin="589,387,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <Button x:Name="btnAddItem" Content="Add item" HorizontalAlignment="Left" Margin="485,328,0,0" VerticalAlignment="Top" Width="75" Click="btnAddItem_Click" />
+        <Button x:Name="btnDeleteItem" Content="Delete item" HorizontalAlignment="Left" Margin="589,328,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteItem_Click" />
+        <Label Content="Cart Number:" HorizontalAlignment="Left" Height="23" Margin="55,58,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Customer Name:" HorizontalAlignment="Left" Height="23" Margin="379,58,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Items" HorizontalAlignment="Left" Height="23" Margin="54,113,0,0" VerticalAlignment="Top" Width="112"/>
+
+    </Grid>
+</Window>

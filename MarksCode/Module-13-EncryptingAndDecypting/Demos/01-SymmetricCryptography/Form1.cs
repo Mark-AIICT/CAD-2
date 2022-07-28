@@ -72,18 +72,8 @@ namespace SymmetricCryptography
        private void button2_Click(object sender, EventArgs e)
         {
 
-            byte[] m_salt = new byte[16];
-
-            string password = textBox1.Text; // Get password from user.
-            // Ensure the password is strong enough, by using a regular expression.
-            Regex r = new Regex(@"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)", RegexOptions.Singleline);
-
-            if ((password.Length >= 9) && (r.IsMatch(password)))
-            {
-                textBox3.Text = "";
-
-                // Generate a 16 byte (128 bit) salt.
-                RandomNumberGenerator rNum = RandomNumberGenerator.Create();
+           
+NumberGenerator rNum = RandomNumberGenerator.Create();
                 rNum.GetBytes(m_salt);
 
                 // Generate a 16 byte (128 bit) key from the password and salt.

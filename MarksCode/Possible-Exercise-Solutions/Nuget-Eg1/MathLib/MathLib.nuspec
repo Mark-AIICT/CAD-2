@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MathLib-mwmssa</id>
+    <version>1.0.0</version>
+    <title>Mathematics Library</title>
+    <authors>Mark</authors>
+    <description>does amazing things with maths</description>
+    <copyright>Copyright ©  2022</copyright>
+    <dependencies />
+  </metadata>
+</package>
