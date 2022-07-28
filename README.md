@@ -15,7 +15,8 @@ This page is a central table of contents that has references to all the associat
 5. [QNA](https://mwddls.sharepoint.com/:w:/s/LP/Efygw1txaDNJlKTTwJU1yfABjT93OPlTu9oOL2zrxyjxiQ?e=CqW2Zp) - The purpose of this page is to record questions raised for which nobody had an answer yet.
 6. [**Code for my additional demos**](MarksCode/Contents.md)
 7. I've added review slides [**here**](Documents/ReviewSlides/).
-7. I've added slides for Git and REST here [**here**](Documents/AdditionalModules/).
-8. [The daily schedule (approximately)](https://github.com/ddls-mark/emu-beak/blob/main/Documents/CAD-Learning-Plan.md).
-9. [Instructions for Additional Exercises](Documents/Exercises/)
-10. [Developer Mindset](Documents/DeveloperMindset.md)
+8. I've added slides for Git and REST here [**here**](Documents/AdditionalModules/).
+9. [The daily schedule (approximately)](https://github.com/ddls-mark/emu-beak/blob/main/Documents/CAD-Learning-Plan.md).
+10. [Instructions for Additional Exercises](Documents/Exercises/)
+11. [Possible Exercise Solutions](MarksCode/Possible-Exercise-Solutions/)
+12.  [Developer Mindset](Documents/DeveloperMindset.md)
