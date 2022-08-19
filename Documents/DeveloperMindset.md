@@ -38,7 +38,7 @@
 - Is solutions oriented.
 - Avoids gossip.
 
-### Resiliant
+### Resilient
 - Never stops getting back up.
 
 ### Curious
