@@ -51,6 +51,7 @@ choco install fiddler -y
 choco install postman -y
 choco install nuget.commandline -y
 choco install docker-desktop -y
+choco install visualstudio2022community -y
 
 REM I found trying to install Edge Chromium using Chocolatey was problematic. Giving Google Chrome a go.
 REM Download Edge Chromium (the versions can be found at https://edgeupdates.microsoft.com/api/products?view=enterprise...I used postman to get the JSON
