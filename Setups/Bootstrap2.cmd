@@ -51,7 +51,7 @@ choco install postman -y
 choco install nuget.commandline -y
 choco install docker-desktop -y
 choco install visualstudio2022community -y
-choco install sql-server-managment-studio -y
+rem choco install sql-server-managment-studio -y    DOESN'T install successfully on this lab
 
 
 REM Install Adventureworks
