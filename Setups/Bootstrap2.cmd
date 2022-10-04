@@ -51,14 +51,25 @@ choco install postman -y
 choco install nuget.commandline -y
 choco install docker-desktop -y
 choco install visualstudio2022community -y
+choco install sql-server-managment-studio -y
 
 
 REM Install Adventureworks
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./InstallAdventureworks.Ps1"
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
 
 
 echo "The lab computer needs to restart to install changes"
 
 cmd /C shutdown -r -f -T 3
+
+rem after restart download https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+rem restart again.
+
+
+
 
