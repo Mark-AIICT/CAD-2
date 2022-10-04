@@ -54,8 +54,8 @@ choco install visualstudio2022community -y
 rem choco install sql-server-managment-studio -y    DOESN'T install successfully on this lab
 
 
-REM Install Adventureworks
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./InstallAdventureworks.Ps1"
+REM Install Adventureworks (for az-204 lab)
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -file "./InstallAdventureworks2.Ps1"
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
